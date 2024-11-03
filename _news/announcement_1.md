@@ -1,8 +1,13 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
-inline: true
+title: "My new website is live! :smile:"
+date: 2024-11-03 10:00:00-0400
+inline: false
 related_posts: false
 ---
 
-A simple inline announcement.
+Hello!
+
+I’m thrilled to announce the launch of my new website, where you can find all the latest on my research, publications, and ongoing projects in mathematical biology and computational genetics. The site offers an overview of my work, covering topics from DNA replication dynamics to physics-informed machine learning, as well as insights into my broader interests spanning both mathematics and biology.
+
+Feel free to explore, stay updated on my latest publications, and connect with me on current research!

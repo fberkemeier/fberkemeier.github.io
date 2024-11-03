@@ -2,96 +2,324 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Francisco Pinto Berkemeier
     - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: 22 July 1993
+    - name: Affiliation
+      value: Departments of Pathology and Genetics, University of Cambridge
+    - name: Position
+      value: Postdoctoral Researcher
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Doctor of Philosophy
+      institution: University College London, London, United Kingdom
+      year: 2018 - 2022
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - PhD in Applied Mathematics.
+        - "Thesis title: Cell-cell interactions in epithelial patterning: Notch-Delta signalling and evolutionary dynamics."
+        - "Supervisors: Karen M. Page and Nadia Sidorova."
+    - title: Master of Science
+      institution: King Abdullah University of Science and Technology, Saudi Arabia
+      year: 2016 - 2018
       description:
-        - Description 1.
-        - Description 2.
+        - Master's degree in Applied Mathematics and Computer Science.
+        - Thesis title. A priori regularity of parabolic partialdifferential equations.
+        - "Supervisor: Diogo A. Gomes."
+    - title: Bachelor of Science
+      institution: Instituto Superior Técnico, University of Lisbon, Portugal
+      year: 2012 - 2016
+      description:
+        - Bachelor's degree in Applied Mathematics and Computer Science.
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Postdoctoral Researcher
+      institution: Departments of Pathology and Genetics, University of Cambridge
+      year: 2022 - Now
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - Research Associateship at the University of Cambridge, in the Boemo Group.
+        - "Supervisor: Michael A. Boemo."
+        - title: "Main areas of research:"
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+            - DNA replication.
+            - Computational genetics.
+            - Physics-informed machine learning
+    - title: Postdoctoral Research Associate
+      institution: Queens' College, University of Cambridge
+      year: 2023 - Now
       description:
-        - Description 1.
-        - Description 2.
+        - Rokos PDRA at Queens' College, University of Cambridge.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: College Supervisor
+      institution: Queens' College, University of Cambridge
+      year: 2023 - Now
       description:
+        - Supervision of multiple undergraduate modules in Mathematics and Natural Sciences.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Master's Project Supervisor
+      institution: Department of Pathology, University of Cambridge
+      year: 2023 - 2024
+      description:
+        - Supervision and mentorship of a master's student during a year-long placement research project on modelling DNA replication as part of an integrated master’s in Biochemistry (University of St. Andrews).
 
-- title: Open Source Projects
+    - title: Lecturer
+      institution: Applied Mathematics, University College London
+      year: 2020 - 2021
+      description:
+        - Lecturer of an undergraduate mathematics course (Mathematics for Engineers 1)
+        - "Topics: differentiation, integration, differential equations, vectors, probability, statistics, and numerical methods."
+        - "Other duties: homework/exam structuring, marking, and office hours."
+
+    - title: Teaching Assistant
+      institution: Applied Mathematics, University College London & KAUST
+      year: 2017 - 2022
+      description:
+        - Provided teaching assistance at undergraduate and master's levels
+        - "Main duties: tutorial classes, exam/homework marking, and office hours."
+        - "Topics: calculus, linear algebra, complex analysis, mechanics, and numerical analysis."
+
+    - title: University-level Tutor
+      institution: Pure and Applied Mathematics, Lisbon, Portugal
+      year: 2015 - 2016
+      description:
+        - Tutored students in several university tutoring centers and collaborated with the student math association at IST.
+
+    - title: High School Tutor
+      institution: Mathematics, Physics, and Natural Sciences, Lisbon, Portugal
+      year: 2015 - 2016
+      description:
+        - Provided tutoring services in high school-level tutoring academies.
+
+    - title: Visiting Student
+      institution: KAUST, Saudi Arabia
+      year: 2014
+      description:
+        - 4-month undergraduate Visiting Student Research Program (VSRP).
+        - "Research topics: Mean-Field Games, PDEs, and Functional Analysis."
+        - "Supervisor: Prof. Diogo A. Gomes."
+
+
+- title: Talks
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Research Pitch at LUSO 2024
+      institution: PARSUK
+      year: Oct 2024
+      description:
+        - Presentation on current research at the Portuguese Association of Students and Researchers in the UK (PARSUK).
+    - title: UK DNA Replication Meeting 2024, Poster Session
+      institution: Churchill College, University of Cambridge
+      year: Sep 2024
+      description:
+        - Presentation of the poster 'A Whole-Genome Mathematical Model of DNA Replication'.
 
-- title: Honors and Awards
+    - title: Invited Talk, Mathematics and Applications Colloquium - AMCS (CEMSE)
+      institution: King Abdullah University of Science and Technology
+      year: May 2024
+      description:
+        - Invited talk on mathematical modelling of DNA replication.
+
+    - title: Plenary Talk, Pathology Annual Symposium
+      institution: Li Ka Shing Centre, Cancer Research UK Cambridge Institute
+      year: Mar 2024
+
+    - title: SCR Talk, MCR-SCR Research Talks
+      institution: Queens' College, University of Cambridge
+      year: Mar 2024
+
+    - title: Research Seminar, Genetics Internal Seminars
+      institution: Department of Genetics, University of Cambridge
+      year: Mar 2024
+
+    - title: UCL Talk, Mathematical Biology Seminar
+      institution: Department of Mathematics, University College London
+      year: Jan 2024
+      description:
+        - Talk on current research, specifically on the development of a whole-genome mathematical model of DNA replication in human cells.
+
+    - title: Research in Genetics Day 2023, Poster Session
+      institution: Department of Genetics, University of Cambridge
+      year: Nov 2023
+      description:
+        - Presentation of the poster 'A Whole-Genome Mathematical Model of DNA Replication'.
+
+    - title: OxML 2023, Machine Learning Summer School
+      institution: Mathematical Institute, Oxford
+      year: Jul 2023
+      description:
+        - Participation in the Oxford Machine Learning Summer School, focused on statistical/probabilistic ML, representation learning, reinforcement learning, causal inference, vision & NLP, geometrical DL, among other topics.
+
+    - title: CMP Seminar, Cellular and Molecular Pathology Seminar Series
+      institution: University of Cambridge
+      year: Oct 2022
+      description:
+        - Talk on Notch-Delta long-range signalling dynamics via cell protrusions.
+
+    - title: ECMTB 2022 Talk, European Conference on Mathematical and Theoretical Biology
+      institution: Heidelberg University
+      year: Sep 2022
+      description:
+        - "Participation on the mini-symposium 'Bistable genetic switches across time, space, and disciplines' at ECMTB 2022. Talk title: 'The dynamics of long-range signalling via the Notch-Delta pathway'."
+
+    - title: SLCU Talk
+      institution: Sainsbury Laboratory, University of Cambridge
+      year: Apr 2022
+      description:
+        - Invited talk at Dr Henrik Jönsson's research group meeting on PhD research, titled 'Long-range signalling and patterns in the fly wing'.
+
+    - title: IPLS Talk, Institute for the Physics of Living Systems
+      institution: University College London
+      year: Nov 2021
+      description:
+        - Talk and discussion on mathematical models of signalling pathways vs stretch-induced deformations on the wing disc, titled 'How stretch affects patterning in the fly wing'.
+
+    - title: Math Bio Talk, Departmental Computational Biology Group
+      institution: University College London
+      year: Nov 2021
+      description:
+        - Presentation at the multi-disciplinary computational biology group meeting on the mathematical analysis of long-range signalling systems, including linear and stochastic stability analysis and applications. Supervised by Philip Pearce.
+
+    - title: Poster Competition Panel Member
+      institution: Pure and Applied Mathematics Undergraduate Projects, UCL
+      year: 2020 - 2021
+      description:
+        - Supervised the annual UCL mathematics undergraduate poster competition, where students presented their second-year projects on topics ranging from theoretical exercises in differential geometry to dynamical systems applied to the study of pandemic evolution.
+
+    - title: Cambridge Conference, 'Evolution Evolving' Conference
+      institution: University of Cambridge
+      year: 2019
+      description:
+        - Participated in the 'Evolution Evolving' conference at Churchill College, University of Cambridge. Topics included evolutionary causes and consequences of developmental bias, plasticity, niche construction, and extra-genetic inheritance, approached from mathematical, biological, and philosophical perspectives.
+
+
+- title: Projects
   type: time_table
   contents:
-    - year: 1921
+    - title: <a href="https://github.com/fberkemeier/Notch-Delta-Coupling">Interactive Epithelium</a>
+      year: 2018 - Now
+      description: A beautiful, practical tool for epithelial cell signalling simulations.
+
+    - title: Live StackOverflow
+      institution: Postgraduate Research Group, UCL/LMCB
+      year: 2021
+      description:
+        - Co-founder and organiser of 'Live StackOverflow', a weekly meeting group for PhD and postdoc students working in applied mathematics, physics, and computational biology at UCL. The group provides a friendly, non-formal platform for discussions on improving social, presentation, and research skills among new postgraduate students.
+    
+    - title: M\(\LaTeX\)
+      institution: KAUST
+      year: 2016
+      description:
+        - Windows implementation of the saving directories of 'MLaTeX', a set of tools simplifying the interface between LaTeX and Mathematica.
+
+
+- title: Tests & Certifications
+  type: time_table
+  contents:
+    - title: London Mathematical Society Courses
+      institution: London Taught Course Centre (LTCC), London Mathematical Society
+      year: 2018 - 2019
+      description:
+        - "Topics: Dynamical Systems, Stochastic Processes, Models, and Measure Theory."
+
+    - title: Teaching Training
+      institution: Institute of Education (IoE), UCL
+      year: 2018
+      description:
+        - Completion of the 'Teaching Undergraduates Mathematics or Statistics' (TUMIPS) program.
+
+    - title: TOEFL
+      year: 2017
+      description:
+        - "Score: 108/120."
+
+    #- title: General GRE
+      #year: 2017
+      #description:
+        #- "Scores: Analytical Writing: 3.5/6.0, Verbal Reasoning: 152/170, Quantitative Reasoning: 164/170."
+
+
+- title: Skills & Abilities
+  type: nested_list
+  contents:
+    - title: Programming
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Python, PyTorch, MatLab, R, Wolfram Mathematica, C, C#, C++, Beacon Calculus.
+    - title: Software
       items:
-        - Max Planck Medal
+        - "Writing: LaTeX, MS Office."
+        - "Teaching: Crowdmark, Blackboard Learn, STACK, WISEflow."
+    - title: Languages
+      items:
+        - Portuguese (Native speaker), English (fluent), comfortable with Spanish and French.
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Biology
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+        - DNA replication dynamics
+        - Replication stress and chemotherapy
+        - Genome stability and cancer
+        - Cell-cell signalling
+        - Pattern formation
+        - Evolutionary dynamics
 
-- title: Other Interests
-  type: list
+    - title: Mathematics
+      items:
+        - Partial differential equations
+        - Stochastic processes
+        - Game theory
+        - Functional analysis
+
+    - title: Machine Learning
+      items:
+        - Physics-informed machine learning
+        - Neural operators
+
+
+- title: Extracurricular Activities
+  type: time_table
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - title: Presidency
+      institution: Cambridge University Portuguese Society
+      year: 2023 - 2024
+      description:
+        - As President of the Cambridge University Portuguese Society (CUPor), I helped leading a dynamic cultural community, coordinating a diverse range of events, managing an executive committee, organizing sociocultural events, and advocating for Portuguese students at the university.
+
+    - title: Student Union
+      institution: University College London
+      year: 2018 - 2022
+      description:
+        - Member of the Classical Guitar, Chamber Music, and Hiking Societies at UCL.
+
+    - title: Classical Guitar
+      year: 2005 - Now
+      description:
+        - Experienced in playing various styles including Classical, Jazz, and Bossa Nova in a range of events.
+        - Contributed to group musical arrangements and participated actively in ensemble performances.
+
+    - title: Almada's Music Academy
+      institution: Portugal
+      year: 2005 - 2012
+      description:
+        - Completed undergraduate studies in classical guitar (8th degree).
+        - Participated in several guitar contests and talent shows, winning first and second prizes, as well as honorable mentions.
+
+    - title: Volunteering
+      year: 2012 - 2016
+      description:
+        - title: "Participation in various volunteering activities, including:"
+          contents:
+            - Elderly home visits
+            - Beach cleaning
+            - Organization of homeless dinners.
+        - Leadership role in a non-governmental volunteering organization in workshops in Portugal and Germany.
+
+    - title: Sports
+      year: 2005 - Now
+      description:
+        - Engaged in amateur-level sports, including football, tennis, swimming, and skiing. Two years of federated-level football experience.
+

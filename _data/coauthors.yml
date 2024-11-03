@@ -1,3 +1,19 @@
+"berkemeier":
+  - firstname: ["Francisco"]
+    url: https://scholar.google.com/citations?user=cna5UaoAAAAJ&hl=en
+
+"gomes":
+  - firstname: ["Diogo", "Diogo A.", "Diogo A"]
+    url: https://scholar.google.com/citations?user=05HdyQUAAAAJ&hl=en&oi=sra
+
+"boemo":
+  - firstname: ["Michael A.", "MA", "Michael", "Michael"]
+    url: https://scholar.google.com/citations?user=5NK9E_MAAAAJ&hl=en&oi=sra
+
+"page":
+  - firstname: ["Karen M.", "KM", "Karen", "Karen M"]
+    url: https://scholar.google.com/citations?user=O9eBqgYAAAAJ&hl=en&oi=sra
+
 "adams":
   - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
     url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams

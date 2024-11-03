@@ -630,7 +630,7 @@ third_party_libraries:
 # -----------------------------------------------------------------------------
 
 jekyll_get_json:
-  - data: resume
+  - data: table_data
     json: assets/json/resume.json # it can also be an url
 jsonresume:
   - basics

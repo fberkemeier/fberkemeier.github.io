@@ -2,7 +2,7 @@
 layout: home
 title: Home
 permalink: /
-subtitle: <a href='#'>Postdoctoral Researcher</a> | University of Cambridge.
+subtitle: <a href='/about/'>Postdoctoral Researcher</a> | University of Cambridge.
 
 profile:
   align: right

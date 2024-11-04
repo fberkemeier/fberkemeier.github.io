@@ -6,8 +6,6 @@ nav: true
 nav_order: 0
 ---
 
-I am a Portuguese mathematician born in China and raised in Portugal.
-
 I currently work as a Postdoctoral Research Associate at the University of Cambridge. I am a member of the [Boemo Group](https://www.boemogroup.org) in the Department of Pathology, and I hold a Rokos PDRA position at [Queens’ College](https://www.queens.cam.ac.uk).
 
 Previously, I completed a bachelor’s in Mathematics (IST, Lisbon) and an MSc in Functional Analysis under Prof. Diogo Gomes (KAUST, KSA). Motivated by the fascinating applications of mathematics and computation in the field of cellular and molecular biology, I decided to pursue a PhD in applied mathematics in biology at UCL under the guidance of Prof. Karen Page. My dissertation focused on the mathematical modelling of the Notch-Delta signalling pathway in various epithelial tissues.

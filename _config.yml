@@ -10,7 +10,7 @@ email: fp409@cam.ac.uk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
-  ✉ <a href="mailto:fp409@cam.ac.uk">fp409@cam.ac.uk</a></p>.
+  <a href="mailto:fp409@cam.ac.uk">✉ fp409@cam.ac.uk</a></p>.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: site_icon.png #🧬 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)

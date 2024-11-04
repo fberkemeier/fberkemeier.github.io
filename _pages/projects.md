@@ -5,7 +5,7 @@ permalink: /projects/
 description: My research focuses on the following topics.
 nav: true
 nav_order: 2
-display_categories: [current]
+display_categories: [current, software]
 horizontal: false
 ---
 

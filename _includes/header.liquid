@@ -21,9 +21,31 @@
           {% endif %}
         </a>
       {% elsif site.enable_navbar_social %}
-        <!-- Social Icons -->
-        <div class="navbar-brand social">{% include social.liquid %}</div>
+      <!-- Social Icons -->
+      <div class="navbar-brand social">{% include social.liquid %}</div>
       {% endif %}
+
+      <style>
+      /* Display only the first, second, and seventh icons */
+      .navbar-brand.social > *:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(7)) {
+      display: none;
+      }
+
+      /* Adjust opacity for the first, second, and seventh icons */
+      .navbar-brand.social > *:nth-child(1),
+      .navbar-brand.social > *:nth-child(2),
+      .navbar-brand.social > *:nth-child(7) {
+      opacity: 0.5; /* Adjust opacity as needed */
+      transition: opacity 0.3s ease; /* Smooth transition effect */
+      }
+
+      /* Optional: Add a hover effect to make icons fully opaque on hover */
+      .navbar-brand.social > *:nth-child(1):hover,
+      .navbar-brand.social > *:nth-child(2):hover,
+      .navbar-brand.social > *:nth-child(7):hover {
+      opacity: 1; /* Fully opaque on hover */
+      }
+      </style>
       <!-- Navbar Toggle -->
       <button
         class="navbar-toggler collapsed ml-auto"

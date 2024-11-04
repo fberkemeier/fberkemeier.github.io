@@ -1,5 +1,5 @@
 "berkemeier":
-  - firstname: ["Francisco"]
+  - firstname: ["Francisco", "F"]
     url: https://scholar.google.com/citations?user=cna5UaoAAAAJ&hl=en
 
 "gomes":
@@ -7,7 +7,7 @@
     url: https://scholar.google.com/citations?user=05HdyQUAAAAJ&hl=en&oi=sra
 
 "boemo":
-  - firstname: ["Michael A.", "MA", "Michael", "Michael"]
+  - firstname: ["Michael A.", "MA", "Michael", "Michael A", "M"]
     url: https://scholar.google.com/citations?user=5NK9E_MAAAAJ&hl=en&oi=sra
 
 "page":

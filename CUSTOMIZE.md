@@ -96,13 +96,13 @@ If the entry matches one form of the last names and the first names, it will be 
 
 ```yaml
 "berkemeier":
-  - firstname: ["Francisco"]
+  - firstname: ["Francisco", "F"]
     url: https://scholar.google.com/citations?user=cna5UaoAAAAJ&hl=en
 "gomes":
   - firstname: ["Diogo", "Diogo A.", "Diogo A"]
     url: https://scholar.google.com/citations?user=05HdyQUAAAAJ&hl=en&oi=sra
 "boemo":
-  - firstname: ["Michael A.", "MA", "Michael", "Michael A"]
+  - firstname: ["Michael A.", "MA", "Michael", "Michael A", "M"]
     url: https://scholar.google.com/citations?user=5NK9E_MAAAAJ&hl=en&oi=sra
 "page":
   - firstname: ["Karen M.", "KM", "Karen", "Karen M"]

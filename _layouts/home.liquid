@@ -75,12 +75,29 @@ layout: default
     {% endif %}
 
     <!-- Social -->
+
     {% if page.social %}
       <div class="social">
-        <div class="contact-icons" style="transform: scale(0.75)">{% include social.liquid %}</div>
+        <style>
+          /* Style for each social icon */
+          .social .contact-icons > * {
+            opacity: 0.6; /* Initial lower opacity for each icon */
+            transition: opacity 0.3s ease; /* Smooth transition for opacity change */
+          }
+          
+          /* Change opacity on hover for each icon individually */
+          .social .contact-icons > *:hover {
+            opacity: 1;
+          }
+        </style>
+        <div class="contact-icons" style="transform: scale(0.75);">
+          {% include social.liquid %}
+        </div>
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
     {% endif %}
+
+
 
     {% if site.newsletter.enabled and site.footer_fixed %}
       {% include scripts/newsletter.liquid center=true %}

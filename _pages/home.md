@@ -20,6 +20,6 @@ social: true # includes social icons at the bottom of the page
 
 Welcome to my page! I am a Postdoctoral Researcher at the University of Cambridge in the [Boemo Group](https://www.boemogroup.org), where I study DNA replication kinetics, focusing on how origin firing and fork dynamics maintain genome stability in cancer cells.
 
-I completed my PhD in applied mathematics at University College London, where I developed mathematical models of cell signalling and pattern formation in Drosophila tissues and explored evolutionary dynamics.
+Previously, I completed my PhD in applied mathematics at University College London, where I developed mathematical models of cell signalling and pattern formation in _Drosophila_ tissues, while also investigating broader questions in evolutionary dynamics.
 
-My interests span mathematical biology and computational genetics, particularly in modelling cellular processes and applying physics-informed machine learning to therapeutic contexts. I'm also fascinated by genetics, pattern formation, tumour dynamics, stochastic processes, machine learning, and game theory.
+My general interests include mathematical biology and computational genetics, specifically in modelling cellular processes, pattern formation, tumour dynamics, stochastic processes, physics-informed machine learning, functional analysis, and game theory.

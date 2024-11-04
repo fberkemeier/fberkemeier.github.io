@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My new website is live! :smile:"
+title: "My new website is live!"
 date: 2024-11-03 10:00:00-0400
 inline: false
 related_posts: false

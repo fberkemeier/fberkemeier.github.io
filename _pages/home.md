@@ -9,8 +9,9 @@ profile:
   image: photofranciscobw2.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>🖈 Cambridge, UK</p>
-    <p>✉ <a href="mailto:fp409@cam.ac.uk">fp409@cam.ac.uk</a></p>
+    <p>🌐 Cambridge, UK</p>
+    <p>✉️ <a href="mailto:fp409@cam.ac.uk">fp409@cam.ac.uk</a></p>
+
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"

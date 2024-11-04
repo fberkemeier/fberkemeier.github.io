@@ -9,9 +9,7 @@ profile:
   image: photofranciscobw.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Department of Pathology</p>
-    <p>University of Cambridge</p>
-    <p>🖈 Cambridge, United Kingdom</p>
+    <p>🖈 Cambridge, UK</p>
     <p>✉ <a href="mailto:fp409@cam.ac.uk">fp409@cam.ac.uk</a></p><br>
     <p>🍁</p>
 

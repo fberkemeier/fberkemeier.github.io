@@ -10,24 +10,24 @@ horizontal: false
 related_publications: false
 ---
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <div class="image-container">
-            {% include figure.liquid loading="eager" path="assets/img/gallery/queens.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-            <div class="zoom-title">Mathematical Bridge over the Cam</div> <!-- Zoom title overlay -->
-        </div>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <div class="image-container">
-            {% include figure.liquid loading="eager" path="assets/img/gallery/rosieviva.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-            <div class="zoom-title">Rosie's Successful Viva, June 2024</div> <!-- Zoom title overlay -->
-        </div>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <div class="image-container">
-            {% include figure.liquid loading="eager" path="assets/img/gallery/groupdinner.png" title="example image" class="img-fluid rounded z-depth-1" %}
-            <div class="zoom-title">Formal at Emmanuel College with the Boemo Group</div> <!-- Zoom title overlay -->
-        </div>
-    </div>
+<!-- Gallery Grid Container -->
+<div class="gallery-container">
+  <div class="gallery-item" data-caption="Mathematical Bridge over the Cam">
+    {% include figure.liquid loading="eager" path="assets/img/gallery/queens.jpg" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="gallery-item" data-caption="Rosie's Successful Viva, June 2024">
+    {% include figure.liquid loading="eager" path="assets/img/gallery/rosieviva.jpg" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="gallery-item" data-caption="Formal at Emmanuel College with the Boemo Group">
+    {% include figure.liquid loading="eager" path="assets/img/gallery/groupdinner.png" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="gallery-item" data-caption="An evening with the Cambridge Portuguese Society, May 2024">
+    {% include figure.liquid loading="eager" path="assets/img/gallery/cupor1.jfif" class="img-fluid rounded z-depth-1" %}
+  </div>
+    <div class="gallery-item" data-caption="Invited talk at KAUST, June 2024">
+    {% include figure.liquid loading="eager" path="assets/img/gallery/kaust1.jfif" class="img-fluid rounded z-depth-1" %}
+  </div>
+    <div class="gallery-item" data-caption="Visiting KAUST, June 2024">
+    {% include figure.liquid loading="eager" path="assets/img/gallery/kaust2.jfif" class="img-fluid rounded z-depth-1" %}
+  </div>
 </div>
-

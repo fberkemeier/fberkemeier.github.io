@@ -36,55 +36,92 @@ layout: default
 <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const zoom = mediumZoom('.image-container img', {
-      background: 'transparent' // Set background to transparent
+    const zoom = mediumZoom('.gallery-item img', {
+      background: 'transparent'
     });
 
     zoom.on('open', (event) => {
-      const zoomTitle = event.target.closest('.image-container').querySelector('.zoom-title');
-      if (zoomTitle) {
-        zoomTitle.style.opacity = '1'; !important // Show the caption with opacity
-        zoomTitle.offsetHeight; // Trigger reflow to ensure opacity takes effect
-      }
-      
-      document.body.classList.add('blurred'); // Add blur to background after showing caption
+      const zoomedImg = event.target;
+      zoomedImg.style.height = 'auto';
+      zoomedImg.style.objectFit = 'contain';
+
+      // Create caption dynamically and apply fade-in effect
+      const captionText = zoomedImg.closest('.gallery-item').dataset.caption;
+      let caption = document.createElement('div');
+      caption.classList.add('zoom-caption');
+      caption.textContent = captionText;
+      document.body.appendChild(caption);
+
+      setTimeout(() => {
+        caption.style.opacity = '1'; // Fade in the caption
+      }, 50); // Small delay for smoother effect
+
+      // Add the reduced-opacity class to the body to apply opacity effect
+      document.body.classList.add('reduced-opacity');
     });
 
     zoom.on('close', (event) => {
-      document.body.classList.remove('blurred'); // Remove blur
+      const zoomedImg = event.target;
+      zoomedImg.style.height = '200px';
+      zoomedImg.style.objectFit = 'cover';
 
-      // Hide the zoom-title within the same image container
-      const zoomTitle = event.target.closest('.image-container').querySelector('.zoom-title');
-      if (zoomTitle) {
-        zoomTitle.style.opacity = '0'; // Hide the caption with opacity
+      // Fade out and remove the caption
+      const caption = document.querySelector('.zoom-caption');
+      if (caption) {
+        caption.style.opacity = '0';
+        setTimeout(() => caption.remove(), 300); // Remove after fade-out transition
       }
+
+      // Remove the reduced-opacity class when zooming out
+      document.body.classList.remove('reduced-opacity');
     });
   });
 </script>
 
-<!-- CSS for Background Blur and Zoom Title Styling -->
+<!-- CSS for Gallery Grid Layout, Reduced Opacity, and Smooth Caption Transition -->
 <style>
-  /* Blur effect for background */
-  .blurred *:not(.medium-zoom-image):not(.zoom-title) {
-    filter: blur(8px); /* Apply blur to all elements except zoomed image and caption */
-    transition: filter 0.3s ease !important; /* Smooth transition for the blur */
+  /* Gallery Grid Layout */
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0px;
   }
 
-  /* Styling for the Zoom Title */
-  .zoom-title {
-    opacity: 0; /* Initially hidden */
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+  }
+
+  /* Reduced Opacity for Background */
+  .reduced-opacity *:not(.medium-zoom-image):not(.zoom-caption) {
+    opacity: 0.65; /* Reduce opacity for all elements except zoomed image and caption */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity change */
+  }
+
+  /* Styling for the Zoom Caption with Smooth Transition */
+  .zoom-caption {
+    opacity: 0;
     position: fixed;
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    background: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 0.7em;
+    border-radius: 8px;
+    font-size: 1.1em;
     text-align: center;
-    z-index: 3000; /* High z-index to ensure it appears above the zoomed image */
+    z-index: 3000;
     max-width: 80%;
-    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    transition: opacity 0.3s ease;
   }
 </style>

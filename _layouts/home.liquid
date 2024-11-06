@@ -44,6 +44,8 @@ layout: default
       {{ content }}
     </div>
 
+    <div style="height: 0px; background-color: #ddd; margin: 5px 0;"></div>
+
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
       <h2>
@@ -63,6 +65,8 @@ layout: default
         {% include latest_posts.liquid %}
       </div>
     {% endif %}
+
+    <div style="height: 0px; background-color: #ddd; margin: 5px 0;"></div>
     
     <!-- Selected papers -->
     {% if page.selected_papers %}

@@ -61,9 +61,9 @@ layout: default
     </p>
   </header>
 
-  <article class="post-content">
+  <article class="post-content" style="text-align: justify;">
     {% if page.toc and page.toc.beginning %}
-      <div id="table-of-contents">
+      <div id="table-of-contents" style="text-align: justify;">
         {% toc %}
       </div>
       <hr>
@@ -79,7 +79,7 @@ layout: default
 
   {% if page.related_publications %}
     <h2>References</h2>
-    <div class="publications">
+    <div class="publications" style="text-align: justify;">
       {% bibliography --cited_in_order %}
     </div>
   {% endif %}

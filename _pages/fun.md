@@ -8,9 +8,11 @@ nav_order:
 horizontal: false
 ---
 
-🕮 [Books and texts](/fun/books/).
+<p>📖&#xFE0E; <a href="/fun/books/">Books & texts</a>.</p>
 
-寶 [Digital gems](/fun/gems/).
+<p>🎲&#xFE0E; <a href="/fun/puzzles/">Puzzles & conundrums</a>.</p>
+
+<p>💎&#xFE0E; <a href="/fun/gems/">Digital gems</a>.</p>
 
 <!--<img src="/assets/img/diamond.svg" alt="Diamond icon" style="width: 18px; height: 15px; vertical-align: middle;">
 <a href="/fun/gems/">Digital gems</a>.-->

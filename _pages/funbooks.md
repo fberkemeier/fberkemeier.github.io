@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Books and texts
+title: Books & texts
 permalink: /fun/books/
 description: <em>In science one tries to tell people, in such a way as to be understood by everyone, something that no one ever knew before. But in poetry, it's the exact opposite.</em> <br>- Paul Dirac
 nav: false

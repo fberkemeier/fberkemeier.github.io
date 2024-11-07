@@ -13,7 +13,7 @@ social: true
     <p>Feel free to reach out for collaborations or inquiries!<br></p>
     
     <p>Email: <a href="mailto:fp409@cam.ac.uk">fp409@cam.ac.uk</a><br>
-    Other socials:  
+    Network:  
         {% if page.social %}
           <span class="social" style="display: inline-block; text-align: left; margin: 0; padding: 0;">
             <span class="contact-icons" style="display: inline-block; transform: scale(0.5); transform-origin: left; vertical-align: middle; margin: 0; padding: 0;">

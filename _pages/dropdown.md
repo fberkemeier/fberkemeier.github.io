@@ -11,11 +11,14 @@ children:
   - title: Repositories
     permalink: /repositories/
   - title: divider
-  - title: Fun
-    permalink: /fun/
+  - title: News
+    permalink: /news/
   - title: divider
   - title: Gallery
     permalink: /gallery/
+  - title: divider
+  - title: Fun
+    permalink: /fun/
   - title: divider
   - title: Contact
     permalink: /contact/

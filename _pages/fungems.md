@@ -2,7 +2,7 @@
 layout: page
 title: Digital gems
 permalink: /fun/gems/
-description: <em>I have discovered a truly marvelous demonstration of this proposition that this margin is too narrow to contain</em><br>- Pierre de Fermat
+description: <em>I have discovered a truly marvelous demonstration of this proposition that this margin is too narrow to contain.</em><br>- Pierre de Fermat
 nav: false
 nav_order:
 horizontal: false

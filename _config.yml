@@ -10,7 +10,7 @@ email: fp409@cam.ac.uk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   My personal page.
 footer_text: >
-  Contact: <a href="mailto:fp409@cam.ac.uk">fp409@cam.ac.uk</a></p>.
+
 keywords: dna-replication, applied-mathematics, francisco-berkemeier # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: site_icon.png #🧬  the emoji used as the favicon (alternatively, provide image name in /assets/img/)

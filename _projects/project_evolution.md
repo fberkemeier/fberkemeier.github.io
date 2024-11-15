@@ -3,7 +3,7 @@ layout: distillpage
 title: Evolutionary Dynamics
 description: Studying symmetry and interaction
 img: assets/img/research_preview/research3.png
-importance: 2
+importance: 3
 category: current
 bibliography: 2018-12-22-distill.bib
 ---

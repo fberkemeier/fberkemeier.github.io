@@ -5,9 +5,6 @@ description: Modelling replication kinetics.
 img: assets/img/research_preview/research1.png
 importance: 1
 category: current
-related_publications: true
-giscus_comments: true
-featured: true
 bibliography: 2018-12-22-distill.bib
 
 ---

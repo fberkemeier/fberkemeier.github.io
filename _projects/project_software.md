@@ -8,12 +8,12 @@ category: software
 related_publications: true
 giscus_comments: true
 featured: true
-bibliography: 2018-12-22-distill.bib
+bibliography: papers.bib
 
 ---
 <!---<sub>[← Research](/projects/)</sub>-->
 
-[Interactive Epithelium](https://github.com/fberkemeier/Notch-Delta-Coupling) (IEp, version 1.0.0) aims to provide a practical tool for testing parameter robustness while simulating the dynamics of different signalling pathways in an epithelium. The current version includes cell-cell signalling and protrusions, with several parameters available for custom simulations. The main available models are the Collier and Sprinzak models of juxtacrine signalling.
+[Interactive Epithelium](https://github.com/fberkemeier/Notch-Delta-Coupling) (IEp, version 1.0.0) aims to provide a practical tool for testing parameter robustness while simulating the dynamics of different signalling pathways in an epithelium. The current version includes cell-cell signalling and protrusions, with several parameters available for custom simulations. The main available models are the Collier and Sprinzak models of juxtacrine signalling <d-cite key="collier1996pattern,binshtok2018modeling"></d-cite>.
 
 To run IEp open the notebook 'iEpithelium v1.0.0.nb' with _Wolfram Mathematica_ and scroll down to the 'iEpithelium' cell (in green). Evaluate this cell (Shift+Enter) and the remaining cells will be evaluated (click 'Yes' on the popup window). IEp was developed in _Mathematica_ 13.0.1, so it is recommended that the same version is used.
 

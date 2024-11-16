@@ -38,6 +38,7 @@ horizontal: false
       <li><a href="https://thenumb.at/Functions-are-Vectors/">Functions are vectors, by Max Slater</a></li>
       <li><a href="https://www.dicecollector.com/DICEINFO_WHAT_SHAPES_DO_DICE_HAVE.html">What shapes do dice have?</a></li>
       <li><a href="https://www.geogebra.org/m/bQ8ppzRj">Barnsley's Fern</a></li>
+      <li><a href="https://reverberationradio.com">📻&#xFE0E; Reverberation Radio</a></li>
     <!-- Add other list items here -->
   </ul>
 </div>

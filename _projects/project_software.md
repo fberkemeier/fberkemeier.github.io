@@ -22,7 +22,7 @@ Any feedback is appreciated. Please contact me at: [fp409@cam.ac.uk](mailto:fp40
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/research/IEp.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/research/IEp.png" title="Interactive Epithelium" class="img-fluid rounded z-depth-1" %}
         <div class="caption" style="text-align: center; font-style: italic; margin-top: 10px;">
             Examples of simulations in Interactive Epithelium.
         </div>

@@ -14,7 +14,7 @@ More generally, understanding pattern formation derived from cell-cell interacti
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/research/stretch.gif" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/research/stretch.gif" title="Stretching epithelium" class="img-fluid rounded z-depth-1" %}
         <div class="caption" style="text-align: center; font-style: italic; margin-top: 0px;">
             Stretching a patterning epithelium.
         </div>

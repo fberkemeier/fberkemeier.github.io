@@ -18,7 +18,7 @@ Another significant aspect of my work examines human DNA replication timing, whi
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/research/dnareplication.gif" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/research/dnareplication.gif" title="DNA Replication" class="img-fluid rounded z-depth-1" %}
         <div class="caption" style="text-align: center; font-style: italic; margin-top: 10px;">
             Replication fork in action. Animation by Drew Berry.
         </div>

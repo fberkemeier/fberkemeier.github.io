@@ -5,9 +5,6 @@ description: Toolkit for analyzing DNA replication timing, origin firing rates, 
 img: assets/img/research_preview/replifit.jpg
 importance: 2
 category: software
-related_publications: true
-giscus_comments: true
-featured: true
 bibliography: papers.bib
 
 ---

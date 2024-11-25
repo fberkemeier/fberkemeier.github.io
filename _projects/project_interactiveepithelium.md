@@ -5,9 +5,6 @@ description: A practical tool for eptihelial signalling simulations.
 img: assets/img/research_preview/software1.png
 importance: 1
 category: software
-related_publications: true
-giscus_comments: true
-featured: true
 bibliography: papers.bib
 
 ---

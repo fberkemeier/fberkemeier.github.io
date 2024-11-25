@@ -198,6 +198,10 @@
 - title: Projects
   type: time_table
   contents:
+    - title: <a href="https://github.com/fberkemeier/DNA_replication_model">RepliFit</a>
+      year: 2024 - Now
+      description: Toolkit for analyzing DNA replication timing, origin firing rates, and genomic stability.
+
     - title: <a href="https://github.com/fberkemeier/Notch-Delta-Coupling">Interactive Epithelium</a>
       year: 2018 - Now
       description: A beautiful, practical tool for epithelial cell signalling simulations.

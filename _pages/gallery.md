@@ -30,6 +30,12 @@ related_publications: false
     <div class="gallery-item" data-caption="Visiting KAUST, June 2024">
     {% include figure.liquid loading="eager" path="assets/img/gallery/kaust2.jfif" class="img-fluid rounded z-depth-1" %}
   </div>
+    <div class="gallery-item" data-caption="Cambridge old sports (CUPor 2022)">
+    {% include figure.liquid loading="eager" path="assets/img/gallery/cupor.jpeg" class="img-fluid rounded z-depth-1" %}
+  </div>
+    <div class="gallery-item" data-caption="Poster at UK DNA Replication Meeting 2024">
+    {% include figure.liquid loading="eager" path="assets/img/gallery/ukdna.jpg" class="img-fluid rounded z-depth-1" %}
+  </div>
     <div class="gallery-item" data-caption="Research pitch at LUSO (PARSUK), October 2024">
     {% include figure.liquid loading="eager" path="assets/img/gallery/luso2024.jpg" class="img-fluid rounded z-depth-1" %}
   </div>
@@ -38,5 +44,8 @@ related_publications: false
   </div>
     <div class="gallery-item" data-caption="An evening with the Portuguese & Polish societies, Cambridge, 2023">
     {% include figure.liquid loading="eager" path="assets/img/gallery/cupor2.jfif" class="img-fluid rounded z-depth-1" %}
+  </div>
+    <div class="gallery-item" data-caption="Cycling trivialities, UCL Math Department">
+    {% include figure.liquid loading="eager" path="assets/img/gallery/trivial.jpg" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>

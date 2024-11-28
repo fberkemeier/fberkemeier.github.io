@@ -5,12 +5,12 @@ description: Toolkit for analyzing DNA replication timing, origin firing rates, 
 img: assets/img/research_preview/replifit.jpg
 importance: 2
 category: software
-bibliography: papers.bib
+bibliography: mypapers.bib
 
 ---
 <!---<sub>[← Research](/projects/)</sub>-->
 
-We introduce [RepliFit](https://github.com/fberkemeier/DNA_replication_model), a comprehensive toolkit for analysing DNA replication timing, origin firing rates, and genomic stability across cell lines and chromosomal regions. It includes functions for loading and processing data across whole-genome regions, telomeres, centromeres, and specific loci of interest. By fitting origin firing rates to replication timing data, the toolkit efficiently predicts and compares experimental and modelled timing profiles. The resulting error distributions between predicted and experimental data help in pinpointing regions of interest.
+We introduce [RepliFit](https://github.com/fberkemeier/DNA_replication_model), a comprehensive toolkit for analysing DNA replication timing, origin firing rates, and genomic stability across cell lines and chromosomal regions. It includes functions for loading and processing data across whole-genome regions, telomeres, centromeres, and specific loci of interest. By fitting origin firing rates to replication timing data, the toolkit efficiently predicts and compares experimental and modelled timing profiles <d-cite key="berkemeier2024dna"></d-cite>. The resulting error distributions between predicted and experimental data help in pinpointing regions of interest.
 
 
 <div class="row">

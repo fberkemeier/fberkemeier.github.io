@@ -5,7 +5,7 @@ description: Studying symmetry and interaction
 img: assets/img/research_preview/research3.png
 importance: 3
 category: current
-bibliography: papers.bib
+bibliography: mypapers.bib
 ---
  
 Evolutionary dynamics explores the processes that drive change within populations over time, focusing on how individuals’ traits and interactions influence survival, reproduction, and the distribution of phenotypes across generations. By modeling the mechanisms of evolution, evolutionary dynamics provides insights into how natural selection, genetic drift, and mutation shape populations in both predictable and unexpected ways. Central to this field are the interaction structures that dictate how individuals relate to one another, as these patterns can lead to diverse evolutionary outcomes. Through mathematical and computational models, evolutionary dynamics seeks to uncover underlying principles that govern the adaptability and resilience of populations in varying environments.

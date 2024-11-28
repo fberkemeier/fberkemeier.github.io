@@ -108,7 +108,7 @@ If the entry matches one form of the last names and the first names, it will be 
   - firstname: ["Karen M.", "KM", "Karen", "Karen M"]
     url: https://scholar.google.com/citations?user=O9eBqgYAAAAJ&hl=en&oi=sra
 "cook":
-  - firstname: ["Peter R.", "PR", "Peter", "Peter R", "P", "P R", "P.R.", "P. R."]
+  - firstname: ["Peter R.", "PR", "Peter", "Peter R", "P", "P R", "P.R.", "P. R.","Peter Richard"]
     url: https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=PR+Cook&btnG=
 "adams":
   - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]

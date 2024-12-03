@@ -27,13 +27,14 @@
 
       <style>
       /* Display only the first, second, and seventh icons */
-      .navbar-brand.social > *:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(7)) {
+      .navbar-brand.social > *:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(7)) {
       display: none;
       }
 
       /* Adjust opacity for the first, second, and seventh icons */
       .navbar-brand.social > *:nth-child(1),
       .navbar-brand.social > *:nth-child(2),
+      .navbar-brand.social > *:nth-child(3),
       .navbar-brand.social > *:nth-child(7) {
       opacity: 0.5; /* Adjust opacity as needed */
       transition: opacity 0.3s ease; /* Smooth transition effect */
@@ -42,6 +43,7 @@
       /* Optional: Add a hover effect to make icons fully opaque on hover */
       .navbar-brand.social > *:nth-child(1):hover,
       .navbar-brand.social > *:nth-child(2):hover,
+      .navbar-brand.social > *:nth-child(3):hover,
       .navbar-brand.social > *:nth-child(7):hover {
       opacity: 1; /* Fully opaque on hover */
       }

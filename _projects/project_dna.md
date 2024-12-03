@@ -5,7 +5,7 @@ description: Modelling replication kinetics.
 img: assets/img/research_preview/research1.png
 importance: 1
 category: current
-bibliography: mypapers.bib
+bibliography: papers.bib
 
 ---
 <!---<sub>[← Research](/projects/)</sub>-->

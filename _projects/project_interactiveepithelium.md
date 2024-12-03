@@ -5,7 +5,7 @@ description: A practical tool for eptihelial signalling simulations.
 img: assets/img/research_preview/software1.png
 importance: 1
 category: software
-bibliography: mypapers.bib
+bibliography: papers.bib
 
 ---
 <!---<sub>[← Research](/projects/)</sub>-->
@@ -26,4 +26,4 @@ Any feedback is appreciated. Please contact me at: [fp409@cam.ac.uk](mailto:fp40
     </div>
 </div>
 
-<sub>[← Research](/projects/)</sub>
+<sub>[← Research](/projects/)</sub> 

@@ -5,7 +5,7 @@ description: Patterning in Notch-Delta signalling systems
 img: assets/img/research_preview/research2.png
 importance: 2
 category: current
-bibliography: mypapers.bib
+bibliography: papers.bib
 ---
 
 During my PhD, my main interests included understanding the development of sensory organ precursor cells in several epithelial tissues of the _Drosophila melanogaster_ fly and developing a fitting mathematical model of the crucial mechanisms and dynamics involved in such a system.Other ongoing and more theoretical work aims to relate more generalised systems of long-range signalling and their predominant mathematical features, by performing linear stability analysis to better understand the robustness of well-established Notch-Delta models under certain parameter regions <d-cite key="berkemeier2023coupling"></d-cite>.

@@ -16,6 +16,8 @@ horizontal: false
   </style>
   
   <ul class="centered-list">
+      <li><em><a href="https://i11www.iti.kit.edu/~awolff/lehre/scientific_writing/h-hwm-70.pdf">How to Write Mathematics</a></em><br>
+      Paul R. Halmos</li>
       <li><em><a href="https://www.goodreads.com/book/show/52685608-math-without-numbers">Math Without Numbers</a></em><br>
       Milo Beckman</li>
       <li><em><a href="https://www.goodreads.com/book/show/1262199.Mathematical_Apocrypha">Mathematical Apocrypha: Stories and Anecdotes of Mathematicians and the Mathematical</a></em><br>

@@ -24,6 +24,8 @@ horizontal: false
       Steven G. Krantz</li>
       <li><em><a href="https://www.goodreads.com/book/show/2727059-topology-via-logic?from_search=true&from_srp=true&qid=zwVTgl7y6S&rank=1">Topology via Logic</a></em><br>
       Steven Vickers</li>
+      <li><em><a href="https://www-users.cse.umn.edu/~garrett/m/fun/dangerous_and_illegal.pdf">Dangerous and Illegal Operations in Calculus</a></em><br>
+      Paul Garrett</li>
       <li><em><a href="https://www.goodreads.com/book/show/7993898-partial-differential-equations">The Bible</a></em><br>
       Lawrence C. Evans</li>
     <!-- Add other list items here -->

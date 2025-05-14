@@ -287,11 +287,17 @@
 - title: Extracurricular Activities
   type: time_table
   contents:
-    - title: Presidency
-      institution: Cambridge University Portuguese Society
-      year: 2023 - 2024
+    - title: Ambassador
+      institution: Portuguese Association of Students and Researchers in the UK (PARSUK)
+      year: 2025 - Now
       description:
-        - As President of the Cambridge University Portuguese Society (CUPor), I helped leading a dynamic cultural community, coordinating a diverse range of events, managing an executive committee, organizing sociocultural events, and advocating for Portuguese students at the university.
+        - As a <a href="https://www.parsuk.pt">PARSUK</a> Ambassador, I help strengthen the network and activities of Portuguese researchers and students in the UK, fostering connections and supporting collaborative initiatives.
+
+    - title: Presidency & Vice-Presidency
+      institution: Cambridge University Portuguese Society (CUPor)
+      year: 2023 - Now
+      description:
+        - As former President and now Vice-President of <a href="https://www.cambridgesu.co.uk/organisation/9611/">CUPor</a>, I helped leading a dynamic cultural community, coordinating a diverse range of events, managing an executive committee, organizing sociocultural events, and advocating for Portuguese students at the university.
 
     - title: Student Union
       institution: University College London

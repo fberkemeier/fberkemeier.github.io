@@ -20,7 +20,7 @@ horizontal: false
   </style>
   
   <ul class="centered-list">
-      <li><a href="https://jwilson.coe.uga.edu/EMT668/EMAT6680.F99/Challen/proof/proof.html">Methods of Mathematical Proof</a></li>
+      <li><a href="https://www.onlinemathlearning.com/math-jokes-mathematical-proofs.html">Methods of Mathematical Proof</a></li>
       <li><a href="https://www.reddit.com/r/woahdude/comments/x5waoc/mandelbrot_set_monsters_imagined_by_midjourney/">"Mandelbrot Monsters", imagined by Midjourney</a></li>
       <li><a href="https://superliminal.com">Superliminal Software</a></li>
       <li><a href="https://www.youtube.com/watch?v=7Hk9jct2ozY">A quirky DNA animation, by Drew Berry and Etsuko Uno</a></li>

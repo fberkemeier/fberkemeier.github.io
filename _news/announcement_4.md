@@ -6,7 +6,7 @@ inline: false
 related_posts: false
 ---
 
-Excited to share that our latest paper has been published in _[Nature Communications_(https://www.nature.com/ncomms/)_! 🧬
+Excited to share that our latest paper has been published in _[Nature Communications](https://www.nature.com/ncomms/)_! 🧬
 
 _["DNA replication timing reveals genome-wide features of transcription and fragility"](https://www.nature.com/articles/s41467-025-59991-w)_
 

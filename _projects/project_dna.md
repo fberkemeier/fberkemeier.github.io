@@ -12,7 +12,7 @@ bibliography: papers.bib
 
 DNA replication is an essential process in all living organisms, allowing cells to produce accurate copies of their genetic material to enable division and growth. Despite its importance, many aspects of DNA replication remain complex and not fully understood. My research seeks to deepen our understanding of this process by employing advanced computational techniques.
 
-A key area of my research involves investigating the replication fork—the structure that progresses along the DNA template as replication occurs. By applying process algebras and stochastic calculus, I analyze the primary factors influencing fork movement and its role in determining the timing of DNA replication <d-cite key="berkemeier2025dna,berners2024regulation"></d-cite>.
+A key area of my research involves investigating the replication fork—the structure that progresses along the DNA template as replication occurs. By applying process algebras and stochastic calculus, I analyze the primary factors influencing fork movement and its role in determining the timing of DNA replication <d-cite key="berkemeier2025dna,berners2025regulation"></d-cite>.
 
 Another significant aspect of my work examines human DNA replication timing, which involves the sequence and timing of genome region replication. This process, which remains incompletely understood, has critical implications for genetic disorders and cancer. Through mathematical modelling, I aim to unravel the factors governing replication timing and its regulation, providing insights into the intricate mechanisms underlying DNA replication.
 

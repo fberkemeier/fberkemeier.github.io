@@ -6,7 +6,7 @@ inline: false
 related_posts: false
 ---
 
-Our [recent work](https://www.nature.com/articles/s41467-025-59991-w) has been selected to be featured in the Editors’ Highlights webpage of recent research called “Genetics, genomics and epigenetics”.
+Our [recent work](https://www.nature.com/articles/s41467-025-59991-w) has been selected to feature in Editors’ Highlights webpage of recent research in Nature, called “Genetics, genomics and epigenetics”.
 
 Check it [here](https://www.nature.com/collections/bhkhbxstgj).
 

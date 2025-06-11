@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Paper featured in Editor's Highlights in Nature"
+title: "Paper selected for Nature Editors’ Highlights"
 date: 2025-06-10 10:00:00-0400
 inline: false
 related_posts: false

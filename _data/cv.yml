@@ -198,7 +198,7 @@
 - title: Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/fberkemeier/DNA_replication_model">RepliFit</a>
+    - title: <a href="https://github.com/fberkemeier/DNA_replication_model">RepliMap</a>
       year: 2024 - Now
       description: Toolkit for analyzing DNA replication timing, origin firing rates, and genomic stability.
 

@@ -12,6 +12,28 @@ horizontal: false
 
 #### Model assumptions
 
+<style>
+/* Theme-aware dropdown background */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --dropdown-background-color: #222;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --dropdown-background-color: #fff;
+    }
+}
+
+/* Existing styling for native selects */
+select {
+    background-color: inherit;
+    color: inherit;
+}
+</style>
+
+
 <div style="display: flex; gap: 20px; flex-wrap: wrap; align-items: center; margin-bottom: 20px;">
     <div>
         <label for="initiationRateSelect">Initiation rate:</label><br>
@@ -25,7 +47,7 @@ horizontal: false
         <label for="forkSpeedSelect">Fork speed:</label><br>
         <select id="forkSpeedSelect" onchange="updateEquations()">
             <option value="space_time">Space-time dependent</option>
-            <option value="homogeneous">Constant</option>
+            <option value="constant">Constant</option>
         </select>
     </div>
 </div>
@@ -39,33 +61,30 @@ horizontal: false
 
 #### Quantity to display
 
-<!-- Third dropdown below equations (still present) -->
-<div style="margin-top: 0px;">
-    <select id="quantitySelect" onchange="updateQuantityEquation()">
-        <option value="replication_fraction">Replication fraction</option>
-    </select>
+<!-- Custom dropdown for Quantity -->
+<div id="quantityDropdown" style="position: relative; display: inline-block; margin-top: 0px;">
+    <div id="quantityDropdownButton" onclick="toggleQuantityDropdown()" 
+        style="border: 1px solid #ccc; border-radius: 4px; padding: 10px; min-width: 280px; cursor: pointer; background-color: inherit; color: inherit; position: relative;">
+        <span id="quantityDropdownButtonContent">Replicated fraction \( f(x,t) \)</span>
+        <span style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); pointer-events: none;">&#9662;</span>
+    </div>
+    <div id="quantityDropdownList" style="display: none; position: absolute; z-index: 1000; background-color: var(--dropdown-background-color, white); color: inherit; border: 1px solid #ccc; border-radius: 4px; margin-top: 2px; width: 100%;">
+        <div class="quantityOption" data-value="replication_fraction" onclick="selectQuantityOption(this)" style="padding: 10px; cursor: pointer;">
+            <span>Replicated fraction - \( f(x,t) \)</span>
+        </div>
+        <div class="quantityOption" data-value="expected_replication_timing" onclick="selectQuantityOption(this)" style="padding: 10px; cursor: pointer;">
+            <span>Expected replication timing - \( T(x) \)</span>
+        </div>
+    </div>
 </div>
+
+<!-- Hidden variable for selected quantity -->
+<input type="hidden" id="quantitySelectValue" value="replication_fraction">
 
 <!-- Box for quantity equation -->
 <div style="border: 2px solid #ccc; border-radius: 8px; padding: 15px; margin-top: 20px; font-size: 1.5em;">
     <div id="quantityEquationDiv">
         $$ f(x,t) = 1 - \exp\left( - \int_0^t I(x,\tau) \, d\tau \right) $$
-    </div>
-</div>
-
-<!-- Variations section, hidden initially -->
-<div id="variationSection" style="display: none; margin-top: 20px;">
-    <!-- Checkbox for variations -->
-    <div>
-        <label>
-            <input type="checkbox" id="variationCheckbox" onchange="updateVariationText()">
-            Show variations
-        </label>
-    </div>
-
-    <!-- Box for variation equation (hidden unless checkbox is checked) -->
-    <div id="variationBox" style="display: none; border: 2px solid #ccc; border-radius: 8px; padding: 15px; margin-top: 10px; font-size: 1.5em;">
-        <div id="variationDiv"></div>
     </div>
 </div>
 
@@ -79,24 +98,49 @@ horizontal: false
     // Lookup table for fork speed equations
     const forkEqMap = {
         'space_time': 'v(x,t) = v(x,t)',
-        'homogeneous': 'v(x,t) = v_0'
+        'constant': 'v(x,t) = v_0'
     };
 
-    // Lookup table for replication fraction equation depending on fork + init choices
+    // Master list of main equations
+    const equations = {
+        replication_fraction_space_time_space_time: '$$ f(x,t) = 1 - \\exp\\left( - \\iint_{\\Lambda_X[v]} I(\\xi,\\tau) \\, d\\xi \\, d\\tau \\right) $$',
+        replication_fraction_space_time_time_homogeneous: '$$ f(x,t) = 1 - \\exp\\left( - \\iint_{\\Lambda_X[v]} I(\\xi) \\, d\\xi \\, d\\tau \\right) $$',
+        replication_fraction_space_time_constant: '$$ f(x,t) = 1 - \\exp\\left( - I_0 \\, \\text{Vol}(\\Lambda_X[v]) \\right) $$',
+        replication_fraction_constant_space_time: '$$ f(x,t) = 1 - \\exp\\left( - \\int_0^t \\int_{x - v_0 \\tau}^{x + v_0 \\tau} I(\\xi,\\tau) \\, d\\xi \\, d\\tau \\right) $$',
+        replication_fraction_constant_time_homogeneous: '$$ f(x,t) = 1 - \\exp\\left( - \\int_0^t \\int_{x - v_0 \\tau}^{x + v_0 \\tau} I(\\xi) \\, d\\xi \\, d\\tau \\right) $$',
+        replication_fraction_constant_constant: '$$ f(x,t) = 1 - \\exp\\left( - I_0 v_0 t^2 \\right) $$',
+
+        expected_replication_timing_space_time_space_time: '$$ T(x) = \\int_0^\\infty \\exp\\left( - \\iint_{\\Lambda_X[v]} I(\\xi,\\tau) \\, d\\xi \\, d\\tau \\right) \\, dt $$',
+        expected_replication_timing_space_time_time_homogeneous: '$$ T(x) = \\int_0^\\infty \\exp\\left( - \\iint_{\\Lambda_X[v]} I(\\xi) \\, d\\xi \\, d\\tau \\right) \\, dt $$',
+        expected_replication_timing_space_time_constant: '$$ T(x) =  \\int_0^\\infty \\exp\\left( - I_0 \\, \\text{Vol}(\\Lambda_X[v]) \\right) \\, dt $$',
+        expected_replication_timing_constant_space_time: '$$ T(x) = \\int_0^\\infty \\exp\\left( - \\int_0^t \\int_{x - v_0 \\tau}^{x + v_0 \\tau} I(\\xi,\\tau) \\, d\\xi \\, d\\tau \\right) \\, dt $$',
+        expected_replication_timing_constant_time_homogeneous: '$$ T(x) = \\int_0^\\infty \\exp\\left( - \\int_0^t \\int_{x - v_0 \\tau}^{x + v_0 \\tau} I(\\xi) \\, d\\xi \\, d\\tau \\right) \\, dt $$',
+        expected_replication_timing_constant_constant: '$$ T(x) = \\frac{1}{2}\\sqrt{\\frac{\\pi}{I_0 v_0}} $$'
+    };
+
     const quantityEqMap = {
-        'space_time_space_time': '$$ f(x,t) = 1 - \\exp\\left( - \\iint_{\\Lambda_X[v]} I(\\xi,\\tau) \\, d\\xi \\, d\\tau \\right) $$',
-        'space_time_time_homogeneous': '$$ f(x,t) = 1 - \\exp\\left( - \\iint_{\\Lambda_X[v]} I(\\xi) \\, d\\xi \\, d\\tau \\right) $$',
-        'space_time_constant': '$$ f(x,t) = 1 - \\exp\\left( - I_0 \\, \\text{Vol}(\\Lambda_X[v]) \\right) $$',
-        'homogeneous_space_time': '$$ f(x,t) = 1 - \\exp\\left( - \\int_0^t \\int_{x - v_0 \\tau}^{x + v_0 \\tau} I(\\xi,\\tau) \\, d\\xi \\, d\\tau \\right) $$',
-        'homogeneous_time_homogeneous': '$$ f(x,t) = 1 - \\exp\\left( - \\int_0^t \\int_{x - v_0 \\tau}^{x + v_0 \\tau} I(\\xi) \\, d\\xi \\, d\\tau \\right) $$',
-        'homogeneous_constant': '$$ f(x,t) = 1 - \\exp\\left( - I_0 v_0 t^2 \\right) $$'
+        replication_fraction: {
+            'space_time_space_time': 'replication_fraction_space_time_space_time',
+            'space_time_time_homogeneous': 'replication_fraction_space_time_time_homogeneous',
+            'space_time_constant': 'replication_fraction_space_time_constant',
+            'constant_space_time': 'replication_fraction_constant_space_time',
+            'constant_time_homogeneous': 'replication_fraction_constant_time_homogeneous',
+            'constant_constant': 'replication_fraction_constant_constant'
+        },
+        expected_replication_timing: {
+            'space_time_space_time': 'expected_replication_timing_space_time_space_time',
+            'space_time_time_homogeneous': 'expected_replication_timing_space_time_time_homogeneous',
+            'space_time_constant': 'expected_replication_timing_space_time_constant',
+            'constant_space_time': 'expected_replication_timing_constant_space_time',
+            'constant_time_homogeneous': 'expected_replication_timing_constant_time_homogeneous',
+            'constant_constant': 'expected_replication_timing_constant_constant'
+        }
     };
 
     function updateEquations() {
         var forkSpeed = document.getElementById('forkSpeedSelect').value;
         var initiationRate = document.getElementById('initiationRateSelect').value;
 
-        // Update I and v equation
         var initEq = initEqMap[initiationRate];
         var forkEq = forkEqMap[forkSpeed];
         var eqDiv = document.getElementById('equationDiv');
@@ -105,7 +149,6 @@ horizontal: false
             MathJax.typesetPromise([eqDiv]);
         }
 
-        // Also update quantity equation accordingly
         updateQuantityEquation();
     }
 
@@ -113,57 +156,54 @@ horizontal: false
         var forkSpeed = document.getElementById('forkSpeedSelect').value;
         var initiationRate = document.getElementById('initiationRateSelect').value;
         var quantityKey = forkSpeed + '_' + initiationRate;
+        var selectedQuantity = document.getElementById('quantitySelectValue').value;
 
         var quantityDiv = document.getElementById('quantityEquationDiv');
-        var quantityEq = quantityEqMap[quantityKey] || ''; // fallback
+        var eqLabel = quantityEqMap[selectedQuantity]?.[quantityKey] || '';
+        var quantityEq = equations[eqLabel] || '';
 
         quantityDiv.textContent = quantityEq;
         if (typeof MathJax !== 'undefined') {
             MathJax.typesetPromise([quantityDiv]);
         }
-
-        // Also update variation section visibility
-        updateVariationSection();
     }
 
-    function updateVariationSection() {
-        var forkSpeed = document.getElementById('forkSpeedSelect').value;
-        var initiationRate = document.getElementById('initiationRateSelect').value;
-        var variationSection = document.getElementById('variationSection');
-        var variationBox = document.getElementById('variationBox');
-        var variationDiv = document.getElementById('variationDiv');
+    // Quantity dropdown custom logic
+    function toggleQuantityDropdown() {
+        var list = document.getElementById('quantityDropdownList');
+        var isVisible = (list.style.display === 'block');
+        closeAllDropdowns();
+        list.style.display = isVisible ? 'none' : 'block';
 
-        if (forkSpeed === 'homogeneous' && initiationRate === 'time_homogeneous') {
-            variationSection.style.display = 'block';
-            variationBox.style.display = 'none'; // initially hide box
-            variationDiv.innerHTML = ''; // clear content
-            document.getElementById('variationCheckbox').checked = false;
-        } else {
-            variationSection.style.display = 'none';
+        if (!isVisible && typeof MathJax !== 'undefined') {
+            MathJax.typesetPromise([list]);
         }
     }
 
-    function updateVariationText() {
-        var isChecked = document.getElementById('variationCheckbox').checked;
-        var variationBox = document.getElementById('variationBox');
-        var variationDiv = document.getElementById('variationDiv');
+    function selectQuantityOption(element) {
+        var buttonContent = document.getElementById('quantityDropdownButtonContent');
+        buttonContent.innerHTML = element.querySelector('span').innerHTML;
 
-        if (isChecked) {
-            variationBox.style.display = 'block';
-            variationDiv.innerHTML =
-                  '$$ f(x,t) = 1 - \\exp\\left( - \\int_{-v_0 t}^{v_0 t} \\left(t - \\tfrac{|\\xi|}{v_0}\\right)I(x + \\xi)\, d\\xi \\right) $$' +
-                  '$$ f(x,t) = 1 - \\exp\\left( - (\\phi_t \\ast I)(x) \\right) $$' +
-                  '$$ \\phi_t(x) = \\begin{cases} t - \\tfrac{|\\xi|}{v_0}, & \\text{if }|\\xi|\\le v_0 t\\\\ 0, & \\text{if }|\\xi|> v_0 t.\\end{cases} $$';
-        } else {
-            variationBox.style.display = 'none';
-            variationDiv.innerHTML = '';
-        }
+        document.getElementById('quantitySelectValue').value = element.getAttribute('data-value');
+        document.getElementById('quantityDropdownList').style.display = 'none';
+
+        updateQuantityEquation();
 
         if (typeof MathJax !== 'undefined') {
-            MathJax.typesetPromise([variationDiv]);
+            MathJax.typesetPromise([buttonContent]);
         }
     }
 
-    // Initialise equations on first load
+    document.addEventListener('click', function(event) {
+        var dropdown = document.getElementById('quantityDropdown');
+        if (!dropdown.contains(event.target)) {
+            document.getElementById('quantityDropdownList').style.display = 'none';
+        }
+    });
+
+    function closeAllDropdowns() {
+        document.getElementById('quantityDropdownList').style.display = 'none';
+    }
+
     document.addEventListener('DOMContentLoaded', updateEquations);
 </script>

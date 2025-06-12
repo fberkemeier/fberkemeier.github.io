@@ -10,7 +10,7 @@ horizontal: false
 
 ---
 
-#### Model options
+#### Model assumptions
 
 <div style="display: flex; gap: 20px; flex-wrap: wrap; align-items: center; margin-bottom: 20px;">
     <div>
@@ -53,6 +53,22 @@ horizontal: false
     </div>
 </div>
 
+<!-- Variations section, hidden initially -->
+<div id="variationSection" style="display: none; margin-top: 20px;">
+    <!-- Checkbox for variations -->
+    <div>
+        <label>
+            <input type="checkbox" id="variationCheckbox" onchange="updateVariationText()">
+            Show variations
+        </label>
+    </div>
+
+    <!-- Box for variation equation (hidden unless checkbox is checked) -->
+    <div id="variationBox" style="display: none; border: 2px solid #ccc; border-radius: 8px; padding: 15px; margin-top: 10px; font-size: 1.5em;">
+        <div id="variationDiv"></div>
+    </div>
+</div>
+
 <script>
     // Lookup table for initiation rate equations
     const initEqMap = {
@@ -67,15 +83,14 @@ horizontal: false
     };
 
     // Lookup table for replication fraction equation depending on fork + init choices
-      const quantityEqMap = {
-      'space_time_space_time': '$$ f(x,t) = 1 - \\exp\\left( - \\iint_{\\Lambda_X[v]} I(\\xi,\\tau) \\, d\\xi \\, d\\tau \\right) $$',
-      'space_time_time_homogeneous': '$$ f(x,t) = 1 - \\exp\\left( - \\iint_{\\Lambda_X[v]} I(\\xi) \\, d\\xi \\, d\\tau \\right) $$',
-      'space_time_constant': '$$ f(x,t) = 1 - \\exp\\left( - I_0 \\, \\text{Vol}(\\Lambda_X[v]) \\right) $$',
-      'homogeneous_space_time': '$$ f(x,t) = 1 - \\exp\\left( - \\int_0^t \\int_{x - v_0 \\tau}^{x + v_0 \\tau} I(\\xi,\\tau) \\, d\\xi \\, d\\tau \\right) $$',
-      'homogeneous_time_homogeneous': '$$ f(x,t) = 1 - \\exp\\left( - \\int_0^t \\int_{x - v_0 \\tau}^{x + v_0 \\tau} I(\\xi) \\, d\\xi \\, d\\tau \\right) $$',
-      'homogeneous_constant': '$$ f(x,t) = 1 - \\exp\\left( - I_0 v_0 t^2 \\right) $$'
-      };
-
+    const quantityEqMap = {
+        'space_time_space_time': '$$ f(x,t) = 1 - \\exp\\left( - \\iint_{\\Lambda_X[v]} I(\\xi,\\tau) \\, d\\xi \\, d\\tau \\right) $$',
+        'space_time_time_homogeneous': '$$ f(x,t) = 1 - \\exp\\left( - \\iint_{\\Lambda_X[v]} I(\\xi) \\, d\\xi \\, d\\tau \\right) $$',
+        'space_time_constant': '$$ f(x,t) = 1 - \\exp\\left( - I_0 \\, \\text{Vol}(\\Lambda_X[v]) \\right) $$',
+        'homogeneous_space_time': '$$ f(x,t) = 1 - \\exp\\left( - \\int_0^t \\int_{x - v_0 \\tau}^{x + v_0 \\tau} I(\\xi,\\tau) \\, d\\xi \\, d\\tau \\right) $$',
+        'homogeneous_time_homogeneous': '$$ f(x,t) = 1 - \\exp\\left( - \\int_0^t \\int_{x - v_0 \\tau}^{x + v_0 \\tau} I(\\xi) \\, d\\xi \\, d\\tau \\right) $$',
+        'homogeneous_constant': '$$ f(x,t) = 1 - \\exp\\left( - I_0 v_0 t^2 \\right) $$'
+    };
 
     function updateEquations() {
         var forkSpeed = document.getElementById('forkSpeedSelect').value;
@@ -105,6 +120,47 @@ horizontal: false
         quantityDiv.textContent = quantityEq;
         if (typeof MathJax !== 'undefined') {
             MathJax.typesetPromise([quantityDiv]);
+        }
+
+        // Also update variation section visibility
+        updateVariationSection();
+    }
+
+    function updateVariationSection() {
+        var forkSpeed = document.getElementById('forkSpeedSelect').value;
+        var initiationRate = document.getElementById('initiationRateSelect').value;
+        var variationSection = document.getElementById('variationSection');
+        var variationBox = document.getElementById('variationBox');
+        var variationDiv = document.getElementById('variationDiv');
+
+        if (forkSpeed === 'homogeneous' && initiationRate === 'time_homogeneous') {
+            variationSection.style.display = 'block';
+            variationBox.style.display = 'none'; // initially hide box
+            variationDiv.innerHTML = ''; // clear content
+            document.getElementById('variationCheckbox').checked = false;
+        } else {
+            variationSection.style.display = 'none';
+        }
+    }
+
+    function updateVariationText() {
+        var isChecked = document.getElementById('variationCheckbox').checked;
+        var variationBox = document.getElementById('variationBox');
+        var variationDiv = document.getElementById('variationDiv');
+
+        if (isChecked) {
+            variationBox.style.display = 'block';
+            variationDiv.innerHTML =
+                  '$$ f(x,t) = 1 - \\exp\\left( - \\int_{-v_0 t}^{v_0 t} \\left(t - \\tfrac{|\\xi|}{v_0}\\right)I(x + \\xi)\, d\\xi \\right) $$' +
+                  '$$ f(x,t) = 1 - \\exp\\left( - (\\phi_t \\ast I)(x) \\right) $$' +
+                  '$$ \\phi_t(x) = \\begin{cases} t - \\tfrac{|\\xi|}{v_0}, & \\text{if }|\\xi|\\le v_0 t\\\\ 0, & \\text{if }|\\xi|> v_0 t.\\end{cases} $$';
+        } else {
+            variationBox.style.display = 'none';
+            variationDiv.innerHTML = '';
+        }
+
+        if (typeof MathJax !== 'undefined') {
+            MathJax.typesetPromise([variationDiv]);
         }
     }
 

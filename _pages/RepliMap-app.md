@@ -65,7 +65,7 @@ select {
 <div id="quantityDropdown" style="position: relative; display: inline-block; margin-top: 0px;">
     <div id="quantityDropdownButton" onclick="toggleQuantityDropdown()" 
         style="border: 1px solid #ccc; border-radius: 4px; padding: 10px; min-width: 280px; cursor: pointer; background-color: inherit; color: inherit; position: relative;">
-        <span id="quantityDropdownButtonContent">Replicated fraction \( f(x,t) \)</span>
+        <span id="quantityDropdownButtonContent">Replicated fraction - \( f(x,t) \)</span>
         <span style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); pointer-events: none;">&#9662;</span>
     </div>
     <div id="quantityDropdownList" style="display: none; position: absolute; z-index: 1000; background-color: var(--dropdown-background-color, white); color: inherit; border: 1px solid #ccc; border-radius: 4px; margin-top: 2px; width: 100%;">

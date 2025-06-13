@@ -10,7 +10,7 @@ horizontal: false
 
 ---
 
-#### Model assumptions
+#### Model assumptions ####
 
 <style>
 /* Theme-aware dropdown background */
@@ -32,6 +32,7 @@ select {
     color: inherit;
 }
 
+/* Fix horizontal shift */
 html {
     overflow-y: scroll;
 }
@@ -196,7 +197,7 @@ html {
         var selectedQuantity = document.getElementById('quantitySelectValue').value;
 
         var quantityDiv = document.getElementById('quantityEquationDiv');
-        var eqLabel = quantityEqMap[selectedQuantity]?.[quantityKey] || '';
+        var eqLabel = (quantityEqMap[selectedQuantity] && quantityEqMap[selectedQuantity][quantityKey]) || '';
         var quantityEq = equations[eqLabel] || '';
 
         quantityDiv.textContent = quantityEq;

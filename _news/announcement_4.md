@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "New paper out in Nature Communications!"
+title: "New paper in Nature Communications!"
 date: 2025-05-19 10:00:00-0400
 inline: false
 related_posts: false

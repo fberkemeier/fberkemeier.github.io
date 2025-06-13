@@ -59,7 +59,7 @@ select {
     </div>
 </div>
 
-#### Quantity to display
+#### Quantity to display ####
 
 <!-- Custom dropdown for Quantity -->
 <div id="quantityDropdown" style="position: relative; display: inline-block; margin-top: 0px;">

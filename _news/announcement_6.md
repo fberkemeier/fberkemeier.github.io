@@ -6,9 +6,9 @@ inline: false
 related_posts: false
 ---
 
-Ecstatic to share that our latest paper has been published in _[PLOS Computational Biology](https://www.nature.com/ncomms/)_! 🧬
+Ecstatic to share that our latest paper has been published in _PLOS Computational Biology_! 🧬
 
-["Regulation of replication timing in _Saccharomyces cerevisiae_"](journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013066)
+["Regulation of replication timing in Saccharomyces cerevisiae"](journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013066)
 
 We present a simple model that explains how yeast cells control the timing of DNA replication. We show that competition among replication origins for a limited pool of essential proteins can reproduce key experimental features of replication dynamics. The model also predicts how changes in protein availability affect replication timing. This work provides a new tool to study DNA replication and its regulation.
 

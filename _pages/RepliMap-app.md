@@ -3,7 +3,7 @@
 layout: page
 title: RepliMap interactive app
 permalink: /RepliMap-app/
-description: Mapping DNA replication kinetics - Find a suitable equation for your research needs.
+description: A mathematical map of DNA replication kinetics - Find a suitable equation for your research needs.
 nav: false
 nav_order: 8
 horizontal: false

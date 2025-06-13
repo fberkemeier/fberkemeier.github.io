@@ -14,4 +14,4 @@ We present a simple model that explains how yeast cells control the timing of DN
 
 A big thank you to my co-authors Rosie Berners-Lee, Eamonn Gilmore, Michael Boemo, and everyone who supported this research.
 
-🔗 Read the full paper here: [journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013066](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013066)
+🔗 Read the full paper here: [journals.plos.org/ploscompbiol/article?id=10.1371](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013066)

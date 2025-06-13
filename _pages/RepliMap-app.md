@@ -31,8 +31,11 @@ select {
     background-color: inherit;
     color: inherit;
 }
-</style>
 
+html {
+    overflow-y: scroll;
+}
+</style>
 
 <div style="display: flex; gap: 20px; flex-wrap: wrap; align-items: center; margin-bottom: 20px;">
     <div>
@@ -53,7 +56,7 @@ select {
 </div>
 
 <!-- Box for I and v equations -->
-<div style="border: 2px solid #ccc; border-radius: 8px; padding: 15px; margin-top: 20px; font-size: 1.5em; margin-bottom: 30px;">
+<div style="border: 2px solid #ccc; border-radius: 8px; padding: 15px; margin-top: 20px; font-size: 1.3em; margin-bottom: 30px;">
     <div id="equationDiv">
         $$ I(x,t) = I_0 \quad , \quad v(t) = v_0 $$
     </div>
@@ -82,26 +85,40 @@ select {
 <input type="hidden" id="quantitySelectValue" value="replication_fraction">
 
 <!-- Box for quantity equation -->
-<div style="border: 2px solid #ccc; border-radius: 8px; padding: 15px; margin-top: 20px; font-size: 1.5em;">
+<div style="border: 2px solid #ccc; border-radius: 8px; padding: 15px; margin-top: 20px; font-size: 1.3em;">
     <div id="quantityEquationDiv">
         $$ f(x,t) = 1 - \exp\left( - \int_0^t I(x,\tau) \, d\tau \right) $$
     </div>
 </div>
 
+<!-- Variations section, hidden initially -->
+<div id="variationSection" style="display: none; margin-top: 20px;">
+    <!-- Checkbox for variations -->
+    <div>
+        <label>
+            <input type="checkbox" id="variationCheckbox" onchange="updateVariationText()">
+            Show variations
+        </label>
+    </div>
+
+    <!-- Box for variation equations (hidden unless checkbox is checked) -->
+    <div id="variationBox" style="display: none; border: 2px solid #ccc; border-radius: 8px; padding: 15px; margin-top: 10px; font-size: 1.3em;">
+        <div id="variationDiv"></div>
+    </div>
+</div>
+
 <script>
-    // Lookup table for initiation rate equations
     const initEqMap = {
         'space_time': 'I(x,t) = I(x,t)',
         'time_homogeneous': 'I(x,t) = I(x)',
         'constant': 'I(x,t) = I_0'
     };
-    // Lookup table for fork speed equations
+
     const forkEqMap = {
         'space_time': 'v(x,t) = v(x,t)',
         'constant': 'v(x,t) = v_0'
     };
 
-    // Master list of main equations
     const equations = {
         replication_fraction_space_time_space_time: '$$ f(x,t) = 1 - \\exp\\left( - \\iint_{\\Lambda_X[v]} I(\\xi,\\tau) \\, d\\xi \\, d\\tau \\right) $$',
         replication_fraction_space_time_time_homogeneous: '$$ f(x,t) = 1 - \\exp\\left( - \\iint_{\\Lambda_X[v]} I(\\xi) \\, d\\xi \\, d\\tau \\right) $$',
@@ -137,6 +154,26 @@ select {
         }
     };
 
+    const variationEqMap = {
+        'constant_time_homogeneous_replication_fraction': [
+            'replication_fraction_constant_time_homogeneous_variation_1',
+            'replication_fraction_constant_time_homogeneous_variation_2',
+            'replication_fraction_constant_time_homogeneous_variation_3'
+        ],
+        'space_time_space_time_expected_replication_timing': [
+            'expected_replication_timing_space_time_space_time_variation_1',
+            'expected_replication_timing_space_time_space_time_variation_2'
+        ]
+    };
+
+    const variationEquations = {
+        replication_fraction_constant_time_homogeneous_variation_1: '$$ f(x,t) = 1 - \\exp\\left( - \\int_{-v_0 t}^{v_0 t} \\left(t - \\tfrac{|\\xi|}{v_0}\\right)I(x + \\xi)\, d\\xi \\right) $$',
+        replication_fraction_constant_time_homogeneous_variation_2: '$$ f(x,t) = 1 - \\exp\\left( - (\\phi_t \\ast I)(x) \\right) $$',
+        replication_fraction_constant_time_homogeneous_variation_3: '$$ \\phi_t(x) = \\begin{cases} t - \\tfrac{|\\xi|}{v_0}, & \\text{if }|\\xi|\\le v_0 t\\\\ 0, & \\text{if }|\\xi|> v_0 t.\\end{cases} $$',
+        expected_replication_timing_space_time_space_time_variation_1: '$$ T(x) = \\int_0^\\infty \\left( 1 - f(x,t) \\right) dt $$',
+        expected_replication_timing_space_time_space_time_variation_2: '$$ \\Lambda(x,t) = \\iint_{\\Lambda_X[v]} I(\\xi,\\tau) \\, d\\xi \\, d\\tau $$'
+    };
+
     function updateEquations() {
         var forkSpeed = document.getElementById('forkSpeedSelect').value;
         var initiationRate = document.getElementById('initiationRateSelect').value;
@@ -166,9 +203,54 @@ select {
         if (typeof MathJax !== 'undefined') {
             MathJax.typesetPromise([quantityDiv]);
         }
+
+        updateVariationSection();
     }
 
-    // Quantity dropdown custom logic
+    function updateVariationSection() {
+        var forkSpeed = document.getElementById('forkSpeedSelect').value;
+        var initiationRate = document.getElementById('initiationRateSelect').value;
+        var selectedQuantity = document.getElementById('quantitySelectValue').value;
+        var variationSection = document.getElementById('variationSection');
+        var variationBox = document.getElementById('variationBox');
+        var variationDiv = document.getElementById('variationDiv');
+
+        var comboKey = forkSpeed + '_' + initiationRate + '_' + selectedQuantity;
+
+        if (variationEqMap[comboKey]) {
+            variationSection.style.display = 'block';
+            variationBox.style.display = 'none';
+            variationDiv.innerHTML = '';
+            document.getElementById('variationCheckbox').checked = false;
+        } else {
+            variationSection.style.display = 'none';
+        }
+    }
+
+    function updateVariationText() {
+        var isChecked = document.getElementById('variationCheckbox').checked;
+        var variationBox = document.getElementById('variationBox');
+        var variationDiv = document.getElementById('variationDiv');
+
+        var forkSpeed = document.getElementById('forkSpeedSelect').value;
+        var initiationRate = document.getElementById('initiationRateSelect').value;
+        var selectedQuantity = document.getElementById('quantitySelectValue').value;
+        var comboKey = forkSpeed + '_' + initiationRate + '_' + selectedQuantity;
+
+        if (isChecked && variationEqMap[comboKey]) {
+            variationBox.style.display = 'block';
+            var eqLabels = variationEqMap[comboKey];
+            variationDiv.innerHTML = eqLabels.map(label => variationEquations[label] || '').join('');
+        } else {
+            variationBox.style.display = 'none';
+            variationDiv.innerHTML = '';
+        }
+
+        if (typeof MathJax !== 'undefined') {
+            MathJax.typesetPromise([variationDiv]);
+        }
+    }
+
     function toggleQuantityDropdown() {
         var list = document.getElementById('quantityDropdownList');
         var isVisible = (list.style.display === 'block');

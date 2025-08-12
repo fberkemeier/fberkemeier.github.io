@@ -97,16 +97,25 @@ If the entry matches one form of the last names and the first names, it will be 
 ```yaml
 "berkemeier":
   - firstname: ["Francisco", "F"]
-    url: https://scholar.google.com/citations?user=cna5UaoAAAAJ&hl=en
+    url: https://scholar.google.com/citations?user=cna5UaoAAAAJ
 "gomes":
   - firstname: ["Diogo", "Diogo A.", "Diogo A"]
-    url: https://scholar.google.com/citations?user=05HdyQUAAAAJ&hl=en&oi=sra
+    url: https://scholar.google.com/citations?user=05HdyQUAAAAJ
 "boemo":
   - firstname: ["Michael A.", "MA", "Michael", "Michael A", "M"]
     url: https://scholar.google.com/citations?user=5NK9E_MAAAAJ&hl=en&oi=sra
 "page":
   - firstname: ["Karen M.", "KM", "Karen", "Karen M"]
-    url: https://scholar.google.com/citations?user=O9eBqgYAAAAJ&hl=en&oi=sra
+    url: https://scholar.google.com/citations?user=O9eBqgYAAAAJ
+"paci":
+  - firstname: ["Paci G.", "GP", "Paci", "Giulia"]
+    url: https://scholar.google.com/citations?user=wtojP1sAAAAJ
+"baum":
+  - firstname: ["Buzz B.", "BB", "Baum", "Buzz"]
+    url: https://scholar.google.com/citations?user=FEfP9AsAAAAJ&hl
+"mao":
+  - firstname: ["Mao Y.", "YM", "Mao", "Yanlan"]
+    url: https://scholar.google.com/citations?user=LZ3SXx8AAAAJ
 "cook":
   - firstname: ["Peter R.", "PR", "Peter", "Peter R", "P", "P R", "P.R.", "P. R.","Peter Richard"]
     url: https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=PR+Cook&btnG=

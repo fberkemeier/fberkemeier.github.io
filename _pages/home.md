@@ -22,6 +22,6 @@ Welcome to my page! I am a Postdoctoral Researcher at the University of Cambridg
 
 Previously, I completed my PhD in applied mathematics at University College London, where I developed mathematical models of cell signalling and pattern formation in _Drosophila_ tissues, while also investigating broader questions in evolutionary dynamics.
 
-My general interests include mathematical biology and computational genetics, specifically in modelling cellular processes, pattern formation, tumour dynamics, stochastic processes, physics-informed machine learning, functional analysis, and game theory.
+My general interests include mathematical biology and computational genomics, specifically in modelling cellular processes, pattern formation, tumour dynamics, stochastic processes, physics-informed machine learning, functional analysis, and game theory.
 
 ---

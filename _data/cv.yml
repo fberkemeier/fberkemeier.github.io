@@ -10,29 +10,6 @@
     - name: Position
       value: Postdoctoral Researcher
 
-- title: Education
-  type: time_table
-  contents:
-    - title: Doctor of Philosophy
-      institution: University College London, London, United Kingdom
-      year: 2018 - 2022
-      description:
-        - PhD in Applied Mathematics.
-        - "Thesis title: Cell-cell interactions in epithelial patterning: Notch-Delta signalling and evolutionary dynamics."
-        - "Supervisors: Karen M. Page and Nadia Sidorova."
-    - title: Master of Science
-      institution: King Abdullah University of Science and Technology, Saudi Arabia
-      year: 2016 - 2018
-      description:
-        - Master's degree in Applied Mathematics and Computer Science.
-        - Thesis title. A priori regularity of parabolic partialdifferential equations.
-        - "Supervisor: Diogo A. Gomes."
-    - title: Bachelor of Science
-      institution: Instituto Superior Técnico, University of Lisbon, Portugal
-      year: 2012 - 2016
-      description:
-        - Bachelor's degree in Applied Mathematics and Computer Science.
-
 - title: Experience
   type: time_table
   contents:
@@ -101,6 +78,28 @@
         - "Research topics: Mean-Field Games, PDEs, and Functional Analysis."
         - "Supervisor: Prof. Diogo A. Gomes."
 
+- title: Education
+  type: time_table
+  contents:
+    - title: Doctor of Philosophy
+      institution: University College London, London, United Kingdom
+      year: 2018 - 2022
+      description:
+        - PhD in Applied Mathematics.
+        - "Thesis title: Cell-cell interactions in epithelial patterning: Notch-Delta signalling and evolutionary dynamics."
+        - "Supervisors: Karen M. Page and Nadia Sidorova."
+    - title: Master of Science
+      institution: King Abdullah University of Science and Technology, Saudi Arabia
+      year: 2016 - 2018
+      description:
+        - Master's degree in Applied Mathematics and Computer Science.
+        - Thesis title. A priori regularity of parabolic partialdifferential equations.
+        - "Supervisor: Diogo A. Gomes."
+    - title: Bachelor of Science
+      institution: Instituto Superior Técnico, University of Lisbon, Portugal
+      year: 2012 - 2016
+      description:
+        - Bachelor's degree in Applied Mathematics and Computer Science.
 
 - title: Talks
   type: time_table

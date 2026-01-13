@@ -6,7 +6,7 @@ inline: false
 related_posts: false
 ---
 
-Last week’s Research in Genetics departmental symposium was a welcome opportunity to step back from day to day work and see the breadth of research happening across the department. I was very grateful to learn that my poster was awarded the [Best Postdoc Poster prize at this year’s meeting](https://www.boemogroup.org/post/francisco-wins-award-for-best-poster-at-departmental-symposium).
+Last week’s Research in Genetics departmental symposium was a welcome opportunity to step back from day to day work and see the breadth of research happening across the department. I was very grateful to learn that my poster was awarded the [Best Postdoc Poster prize at this year's meeting](https://www.boemogroup.org/post/francisco-wins-award-for-best-poster-at-departmental-symposium).
 
 The poster focused on ongoing work on the theory and mathematical modelling of whole genome DNA replication in human cells. It brought together recently [published results in Nature Communications](https://www.nature.com/articles/s41467-025-59991-w) with newer directions that aim to push these models further, both conceptually and in terms of how they connect to experimental data.
 

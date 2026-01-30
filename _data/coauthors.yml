@@ -30,6 +30,24 @@
   - firstname: ["Peter R.", "PR", "Peter", "Peter R", "P", "P R", "P.R.", "P. R.","Peter Richard"]
     url: https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=PR+Cook&btnG=
 
+"sale":
+  - firstname: ["Julian", "J.", "J", "Julian E.", "JE", "J E", "J.E.", "J. E."]
+    url: https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Julian+Sale&btnG=
+"jaworski":
+  - firstname: ["Jedrzej", "J.", "J", "JJ", "J.J.", "J. J.", "Jedrzej J."]
+    url: https://scholar.google.com/citations?user=8a9kPogAAAAJ
+"pfuderer":
+  - firstname: ["Pauline L", "Pauline L.", "P", "P.", "P.L.", "P. L."]
+    url: https://scholar.google.com/citations?user=iPfQAR8AAAAJ
+"nassar":
+  - firstname: ["Joelle", "J", "J."]
+    url: https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Joelle+Nassar&btnG=
+"crisp":
+  - firstname: ["Alastair", "A", "A."]
+    url: https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Alastair+Crisp&btnG=
+
+
+
 "adams":
   - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
     url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams

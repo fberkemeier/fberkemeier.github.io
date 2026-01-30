@@ -1,6 +1,7 @@
 github_users:
   - fberkemeier
   - rb2065
+  - pfuderer
 
 repo_description_lines_max: 2
 
@@ -8,3 +9,4 @@ github_repos:
   - fberkemeier/DNA_replication_model
   - fberkemeier/Notch-Delta-Coupling
   - rb2065/S_cerevisiae_DNA_rep_model
+  - pfuderer/ORILINX

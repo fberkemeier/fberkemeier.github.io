@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About & CV
+title: About
 permalink: /about/
 nav: true
 nav_order: 4

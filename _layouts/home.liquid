@@ -46,10 +46,10 @@ layout: default
 
     <div style="height: 0px; background-color: #ddd; margin: 5px 0;"></div>
 
-    <!-- News -->
+    <!-- What's new -->
     {% if page.news and site.announcements.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">What's new</a>
       </h2>
       <div>
         {% include news.liquid limit=true %}

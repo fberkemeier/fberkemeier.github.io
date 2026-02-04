@@ -1,9 +1,9 @@
 ---
 layout: page
-title: About
+title: About & CV
 permalink: /about/
 nav: true
-nav_order: 0
+nav_order: 4
 ---
 
 I currently work as a Postdoctoral Research Associate at the University of Cambridge. I am a member of the [Boemo Group](https://www.boemogroup.org) in the Department of Pathology, and I hold a Rokos PDRA position at [Queens’ College](https://www.queens.cam.ac.uk).

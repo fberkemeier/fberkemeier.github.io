@@ -18,7 +18,7 @@ Many thanks to everyone who stopped by the poster and to colleagues whose feedba
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid 
             loading="eager" 
-            path="assets/img/news/posterprize.png" 
+            path="assets/img/blog/posterprize.png" 
             title="3D cells animation" 
             class="img-fluid rounded z-depth-1" %}
         <div class="caption" style="text-align: center; font-style: italic; margin-top: 5px;">

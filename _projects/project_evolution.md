@@ -4,7 +4,7 @@ title: Evolutionary Dynamics
 description: Studying symmetry and interaction
 img: assets/img/research_preview/research3.png
 importance: 3
-category: current
+category: themes
 bibliography: papers.bib
 ---
  

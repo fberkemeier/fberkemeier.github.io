@@ -4,7 +4,7 @@ title: DNA Replication
 description: Modelling replication kinetics.
 img: assets/img/research_preview/research1.png
 importance: 1
-category: current
+category: themes
 bibliography: papers.bib
 
 ---

@@ -4,7 +4,7 @@ title: Pattern Formation
 description: Patterning in Notch-Delta signalling systems
 img: assets/img/research_preview/research2.png
 importance: 2
-category: current
+category: themes
 bibliography: papers.bib
 ---
 

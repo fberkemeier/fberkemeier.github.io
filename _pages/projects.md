@@ -2,7 +2,7 @@
 layout: page
 title: Research
 permalink: /projects/
-description: Below are the main research themes and software tools developed in my work.
+description: Overview of the main research themes and frameworks shaping my work
 nav: true
 nav_order: 2
 display_categories: [themes, software]

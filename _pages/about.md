@@ -6,13 +6,15 @@ nav: true
 nav_order: 4
 ---
 
-I currently work as a Postdoctoral Research Associate at the University of Cambridge. I am a member of the [Boemo Group](https://www.boemogroup.org) in the Department of Pathology, and I hold a Rokos PDRA position at [Queens’ College](https://www.queens.cam.ac.uk).
+I am a Postdoctoral Research Associate at the University of Cambridge and a member of the [Boemo Group](https://www.boemogroup.org) in the Departments of Pathology and Genetics. I am a College Research Associate at [Emmanuel College](https://www.emma.cam.ac.uk) and previously held a Rokos Postdoctoral Research Associateship at [Queens’ College](https://www.queens.cam.ac.uk).
 
-Previously, I completed a bachelor’s in Mathematics (IST, Lisbon) and an MSc in Functional Analysis under Prof. Diogo Gomes (KAUST, KSA). Motivated by the fascinating applications of mathematics and computation in the field of cellular and molecular biology, I decided to pursue a PhD in applied mathematics in biology at UCL under the guidance of Prof. Karen Page. My dissertation focused on the mathematical modelling of the Notch-Delta signalling pathway in various epithelial tissues.
+I completed a bachelor’s in Mathematics (IST, Lisbon) and an MSc in Functional Analysis under Prof. Diogo Gomes (KAUST, KSA). Motivated by the fascinating applications of mathematics and computation in the field of cellular and molecular biology, I decided to pursue a PhD in applied mathematics in biology at UCL under the guidance of Prof. Karen M. Page. My dissertation focused on the mathematical modelling of the Notch-Delta signalling pathway in various epithelial tissues.
 
-The collaborative nature of the bio-mathematical community and the realisation of the importance of solid and well-developed mathematical and computational tools for comprehending relevant biological processes further inspired me to seek a postdoctoral research project. Specifically, describing errors in DNA replication and gaining a general understanding of the significance of stochasticity in the dysregulation of such processes is one of a number of pertinent questions that I intend to investigate in this new research project, with particular emphasis on the complex implications of sequencing data analysis on oncogenesis, together with the development of AI tools to facilitate such analysis.
+My current work focuses on developing mathematical and computational models to understand how DNA replication is organised across the genome and how it becomes disrupted in disease. I combine dynamical systems, stochastic modelling and various machine learning methods to link genome sequence, chromatin features and replication kinetics within a unified quantitative framework. The broader aim is to clarify the principles governing genome stability and to translate these insights into predictive tools for studying replication stress in cancer. In addition to research, I greatly value teaching and supervising students, supporting them in developing independent and rigorous ways of thinking about mathematical and biological problems.
 
-Beyond academics, I also serve as the Vice President of the [Cambridge University Portuguese Society (CUPor)](https://www.facebook.com/CUPorOficial/). Whenever mathematics and biology permit, you can find me playing the classical guitar or chasing a football.
+Beyond academics, I am also an ambassador for the [Portuguese Association of Researchers and Students in the UK (PARSUK)](https://www.parsuk.pt), and previously served as the President of the [Cambridge University Portuguese Society (CUPor)](https://www.facebook.com/CUPorOficial/). Whenever mathematics and biology permit, you can find me playing the classical guitar or chasing a football.
+
+My full Curriculum Vitae is available [here](/cv/).
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

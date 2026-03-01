@@ -6,7 +6,11 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  - fberkemeier/DNA_replication_model
-  - fberkemeier/Notch-Delta-Coupling
-  - rb2065/S_cerevisiae_DNA_rep_model
-  - pfuderer/ORILINX
+  - name: fberkemeier/DNA_replication_model
+    about: Toolkit for analysing DNA replication timing, origin firing rates, and genomic stability across cell lines and chromosome regions.
+  - name: fberkemeier/Notch-Delta-Coupling
+    about: Mathematical and computational models of Notch Delta signalling and pattern formation.
+  - name: rb2065/S_cerevisiae_DNA_rep_model
+    about: Modelling budding yeast DNA replication dynamics and origin firing programmes.
+  - name: pfuderer/ORILINX
+    about: A genome language model to detect origin of replication sequences across multiple species.

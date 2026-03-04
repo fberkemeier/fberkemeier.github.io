@@ -9,7 +9,7 @@ nav_order: 6
 
 **Michaelmas Term 2025 – Department of Genetics, University of Cambridge**
 
-- **Modelling with Partial Diferential Equations**
+- **Modelling with Partial Differential Equations**
   - Natural Sciences Tripos - Part III Systems Biology
   - [Course description](https://www.natsci.tripos.cam.ac.uk/course-structure/year-four-part-iii)
   - [Notes](/assets/pdf/modelling_PDEs.pdf)

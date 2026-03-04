@@ -7,21 +7,30 @@ nav: false
 nav_order: 6
 ---
 
-**Lent 2024 – Queens’ College, University of Cambridge**
+**Michaelmas Term 2025 – Department of Genetics, University of Cambridge**
+
+- **Modelling with Partial Diferential Equations**
+  - Natural Sciences Tripos - Part III Systems Biology
+  - [Course description](https://www.natsci.tripos.cam.ac.uk/course-structure/year-four-part-iii)
+  - [Notes](/assets/pdf/modelling_PDEs.pdf)
+- **Office hours**: Wednesdays, 2-3pm.
+
+---
+
+**Lent Term 2024 – Queens’ College, University of Cambridge**
 
 - **Mathematics – Course A – Part IA**
   - CST0 Computer Science Tripos
   - NST0 Natural Sciences Tripos
   - [Course description](https://www.natsci.tripos.cam.ac.uk/subject-information/part1a/maths)
-  - [General Notes](/assets/pdf/notes_lent2024.pdf)
-  - [Supervision Notes](/assets/pdf/supervision_notes.pdf)
+  - [General notes](/assets/pdf/notes_lent2024.pdf)
+  - [Supervision notes](/assets/pdf/supervision_notes.pdf)
 - **Mathematics – Course A – Part IA**
   - NST0 Natural Sciences Tripos
-- **Office hours**: Wednesdays, 2-3pm.
 
 ---
 
-**Michaelmas 2023 – Queens’ College, University of Cambridge**
+**Michaelmas Term 2023 – Queens’ College, University of Cambridge**
 
 - **Part IA Mathematics – Course A – Part IA**
   - CST0 Computer Science & Natural Sciences Tripos Supervisions

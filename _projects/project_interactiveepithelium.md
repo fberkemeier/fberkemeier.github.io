@@ -3,9 +3,10 @@ layout: distillpage
 title: Interactive Epithelium
 description: A practical tool for eptihelial signalling simulations.
 img: assets/img/research_preview/software1.png
-importance: 1
+importance: 2
 category: software
 bibliography: papers.bib
+github: https://github.com/fberkemeier/Notch-Delta-Coupling
 
 ---
 <!---<sub>[← Research](/projects/)</sub>-->

@@ -3,7 +3,7 @@ layout: distillpage
 title: RepliMap
 description: Toolkit for simulating, analysing, and inferring DNA replication kinetics.
 img: assets/img/research_preview/replifit.jpg
-importance: 2
+importance: 3
 category: software
 bibliography: papers.bib
 

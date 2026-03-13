@@ -6,6 +6,7 @@ img: assets/img/research_preview/orilinx.png
 importance: 0
 category: software
 bibliography: papers.bib
+github: https://github.com/Pfuderer/ORILINX
 
 ---
 <!---<sub>[← Research](/projects/)</sub>-->

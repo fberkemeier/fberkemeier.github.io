@@ -631,7 +631,21 @@ footer.sticky-bottom {
   .card {
     img {
       width: 100%;
+      aspect-ratio: 1.618;
+      object-fit: cover;
+      object-position: center;
     }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+
+  .project-links {
+    margin-top: auto;
+    justify-content: flex-start;
   }
 
   .col {

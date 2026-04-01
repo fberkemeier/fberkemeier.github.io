@@ -9,7 +9,7 @@ bibliography: papers.bib
 github: https://github.com/fberkemeier/MultiLayer-NotchDelta
 ---
 
-[MSM](https://github.com/fberkemeier/MultiLayer-NotchDelta) is a Python toolkit for simulating Notch-Delta signalling on depth-resolved 3D epithelial contact networks. It was developed to study how apical and lateral cell-cell contacts shape lateral inhibition and the spacing of sensory organ precursor cells in the Drosophila wing margin <d-cite key="paci20253d"></d-cite>.
+[MSM](https://github.com/fberkemeier/MultiLayer-NotchDelta) is a Python toolkit for simulating Notch-Delta signalling on depth-resolved 3D epithelial contact networks. It was developed to study how apical and lateral cell-cell contacts shape lateral inhibition and the spacing of sensory organ precursor cells in the Drosophila wing margin <d-cite key="paci20263d"></d-cite>.
 
 The repository includes the core model, an analysis notebook, and concise [documentation](https://multilayer-notchdelta.readthedocs.io/en/latest/?badge=latest) for running and exploring the software. Together, they provide a practical framework for testing how epithelial geometry and signalling range influence pattern formation.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "New paper in PNAS on 3D epithelial topology and patterning!"
-date: 2026-05-08 10:00:00-0400
+date: 2026-05-08 10:00:00+0100
 inline: false
 related_posts: false
 ---

@@ -5,10 +5,10 @@ description: A genome language model to map DNA replication origins.
 img: assets/img/research_preview/orilinx.png
 importance: 0
 category: software
-bibliography: papers.bib
+bibliography: mypapers.bib
 github: https://github.com/Pfuderer/ORILINX
-
 ---
+
 <!---<sub>[← Research](/projects/)</sub>-->
 
 [ORILINX](https://github.com/Pfuderer/ORILINX) is a genome language model for predicting DNA replication origins and initiation landscapes directly from primary DNA sequence. It addresses a long-standing question in human DNA replication: how initiation sites are specified in the absence of a defining DNA motif.
@@ -19,7 +19,6 @@ When applied genome-wide, ORILINX predictions closely align with independent est
 
 Together, these results indicate that intrinsic DNA sequence encodes meaningful information about replication initiation and that genome language models provide a scalable way to extract this information. Check out our [preprint](https://www.biorxiv.org/content/10.64898/2026.01.29.702604v1), and [try ORILINX](https://github.com/Pfuderer/ORILINX).
 
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/research/orilinx_pipeline.png" title="ORILINX pipeline" class="img-fluid rounded z-depth-1" %}
@@ -29,6 +28,4 @@ Together, these results indicate that intrinsic DNA sequence encodes meaningful 
     </div>
 </div>
 
-
 <sub>[← Research](/projects/)</sub>
-

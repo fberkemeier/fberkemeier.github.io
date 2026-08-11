@@ -16,7 +16,7 @@ horizontal: false
   </style>
   
   <ul class="centered-list">
-      <li><em><a href="https://i11www.iti.kit.edu/~awolff/lehre/scientific_writing/h-hwm-70.pdf">How to Write Mathematics</a></em><br>
+      <li><em>How to Write Mathematics</em><br>
       Paul R. Halmos</li>
       <li><em><a href="https://www.goodreads.com/book/show/52685608-math-without-numbers">Math Without Numbers</a></em><br>
       Milo Beckman</li>
@@ -28,6 +28,5 @@ horizontal: false
       Paul Garrett</li>
       <li><em><a href="https://www.goodreads.com/book/show/7993898-partial-differential-equations">The Bible</a></em><br>
       Lawrence C. Evans</li>
-    <!-- Add other list items here -->
   </ul>
 </div>

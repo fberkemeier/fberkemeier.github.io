@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Grant award to study DNA Replication in the cancer epigenome"
+title: "Grant award to study DNA replication in the cancer epigenome"
 date: 2026-08-10 10:00:00+0100
 inline: false
 related_posts: false

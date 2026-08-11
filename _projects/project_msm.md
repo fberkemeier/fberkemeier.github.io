@@ -5,7 +5,7 @@ description: Multi-layer Signalling Model for Notch-Delta dynamics in 3D epithel
 img: assets/img/research/3Dcells.gif
 importance: 1
 category: software
-bibliography: papers.bib
+bibliography: mypapers.bib
 github: https://github.com/fberkemeier/MultiLayer-NotchDelta
 ---
 

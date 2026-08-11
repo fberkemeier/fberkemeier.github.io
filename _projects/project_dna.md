@@ -5,9 +5,9 @@ description: Modelling replication kinetics.
 img: assets/img/research_preview/research1.png
 importance: 1
 category: themes
-bibliography: papers.bib
-
+bibliography: mypapers.bib
 ---
+
 <!---<sub>[← Research](/projects/)</sub>-->
 
 DNA replication is an essential process in all living organisms, allowing cells to produce accurate copies of their genetic material to enable division and growth. Despite its importance, many aspects of DNA replication remain complex and not fully understood. My research seeks to deepen our understanding of this process by employing advanced computational techniques.

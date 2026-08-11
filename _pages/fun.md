@@ -14,11 +14,6 @@ horizontal: false
 
 <p>💎&#xFE0E; <a href="/fun/gems/">Digital gems</a>.</p>
 
-<!--<img src="/assets/img/diamond.svg" alt="Diamond icon" style="width: 18px; height: 15px; vertical-align: middle;">
-<a href="/fun/gems/">Digital gems</a>.-->
-
-
-
 <br>
 <div class="row justify-content-center">
     <div class="col-sm mt-3 mt-md-0" style="max-width: 450px;"> <!-- Adjust the width as needed -->

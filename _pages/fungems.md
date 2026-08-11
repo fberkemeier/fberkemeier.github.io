@@ -21,7 +21,6 @@ horizontal: false
   
   <ul class="centered-list">
       <li><a href="https://www.onlinemathlearning.com/math-jokes-mathematical-proofs.html">Methods of Mathematical Proof</a></li>
-      <li><a href="https://www.reddit.com/r/woahdude/comments/x5waoc/mandelbrot_set_monsters_imagined_by_midjourney/">"Mandelbrot Monsters", imagined by Midjourney</a></li>
       <li><a href="https://superliminal.com">Superliminal Software</a></li>
       <li><a href="https://www.youtube.com/watch?v=7Hk9jct2ozY">A quirky DNA animation, by Drew Berry and Etsuko Uno</a></li>
       <li><a href="https://www.genealogy.math.ndsu.nodak.edu/index.php">Mathematics Genealogy Project</a></li>

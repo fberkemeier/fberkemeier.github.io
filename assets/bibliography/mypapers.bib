@@ -1,3 +1,23 @@
+@article{alkhaled2026completion,
+  title={Completion of {DNA} replication is constrained by the spatiotemporal organisation of origin firing},
+  author={Alkhaled, Ahmad and Berkemeier, Francisco and Boemo, Michael A. and Nik, Katerina},
+  journal={arXiv},
+  month={sep},
+  year={2026},
+  eprint={2609.07924},
+  archivePrefix={arXiv},
+  primaryClass={math.AP},
+  bibtex_show={true},
+  url={https://arxiv.org/abs/2609.07924},
+  html={https://arxiv.org/abs/2609.07924},
+  preview={repli1d.gif},
+  pdf={alkhaled2026completion.pdf},
+  additional_info={. Preprint},
+  selected={false},
+  selected_order={5},
+  abstract={DNA replication requires the coordination of origin firing and fork progression to ensure the entire genome is timely duplicated before cell division. Yet origin firing is stochastic, giving rise to the classical random completion problem of how probabilistic local events can nevertheless ensure reliable genome duplication. Although several biological mechanisms have been proposed to resolve this problem, a quantitative account of how heterogeneous initiation and fork speed govern the persistence of the final unreplicated regions is still lacking. To address this gap, we introduce a population-level kinetic framework that extends KJMA nucleation-and-growth models by tracking unreplicated intervals over size, genomic position and time. We establish well-posedness of the resulting mean-field system and global existence for compatible data. Notably, by introducing a local initiation mass function, we quantify how the density and spatial organisation of origin firing constrain replication completion, yielding novel and sharp upper bounds on both the worst-locus unreplicated fraction and locuswise near-completion time. These results provide a rigorous and computable foundation for mapping vulnerabilities in replication completion and relating persistent unreplicated regions to replication stress and genome instability.}
+}
+
 @article{pfuderer2026genome,
   title={A genome language model for mapping DNA replication origins},
   author={Pfuderer, Pauline L and Berkemeier, Francisco and Nassar, Joelle and Crisp, Alastair and Jaworski, Jedrzej J. and Moore, Jessica and Sale, Julian E. and Boemo, Michael A},
@@ -12,6 +32,7 @@
   pdf={pfuderer2026genome.pdf},
   additional_info={. Under review},
   selected={true},
+  selected_order={2},
   abstract={Origin firing is a central process during DNA replication, but specific sequences defining replication origin usage have not been defined in human cells. Here, we show that a genome language model can accurately predict which sequences can act as an origin of replication, thereby enabling the fast and cost-effective creation of genome-wide replication origin maps. We fine-tuned a genome language model on the primary sequence of mapped human origins to establish ORILINX (ORIgin of replication Language-model Inference via Nucleotide conteXt) and found that it learns a rich representation of sequence features linked to replication initiation, extending beyond known predictive features such as GC-content and G-quadruplex motifs. When applied genome-wide, the model’s sequence-derived origin calling closely mirrors origin efficiency inferred from replication timing, suggesting that intrinsic sequence context encodes information relevant to initiation frequency. Furthermore, we performed Short Nascent Strand sequencing (SNS-seq) and Repli-seq to demonstrate that ORILINX can generalise to other mammalian genomes, such as those of mice and sheep, as well as other vertebrates such as chickens. Finally, we packaged ORILINX into a simple, easy-to-use tool which is available at https://github.com/Pfuderer/ORILINX.git.}
 }
 
@@ -30,6 +51,7 @@
   preview={3dcell.gif},
   pdf={paci20263d.pdf},
   selected={true},
+  selected_order={3},
   abstract={Cell behaviors in multicellular organisms are coordinated via both diffusible molecules and by signals based on direct cell-cell contacts. The mode of cell communication used influences the signaling range. In many developing epithelia, contact-based Notch-Delta lateral inhibition signaling is used to pattern cell fates. While previous work revealed that cells can use protrusions to extend the range of Notch-Delta signaling to alter these patterns, this is not a general feature of epithelia. In addition, it is not known how the complex three-dimensional (3D) shapes of epithelial cells influence cell communication. In exploring this question, we show that epithelial cells at the Drosophila wing margin, which lack basal protrusions, contact different neighbors at different heights along their apico-basal axis, effectively increasing the number of neighbors each cell touches. To quantitatively assess this behavior, we develop a mathematical modeling framework (Multilayer Signaling Model) to simulate Notch-Delta signaling over data-derived 3D cell topologies. The model predicts that lateral cell surface signaling is essential to tune the spacing between sensory organ precursors (SOPs). In agreement, we show that perturbing cortical stiffness and cell tortuosity in vivo modifies SOP spacing. These results emphasize the importance of 3D cell geometry and topology in fine-tuning signaling range.}
 }
 
@@ -48,6 +70,7 @@
   preview={dnarepli.gif},
   pdf={berkemeier2025dna.pdf},
   selected={true},
+  selected_order={1},
   abstract={DNA replication in humans requires precise regulation to ensure accurate genome duplication and maintain genome integrity. A key indicator of this regulation is replication timing, which reflects the interplay between origin firing and fork dynamics. We present a high-resolution (1-kilobase) mathematical model that infers firing rate distributions from Repli-seq timing data across multiple cell lines, enabling a genome-wide comparison between predicted and observed replication. Notably, regions where the model and data diverge often overlap fragile sites and long genes, highlighting the influence of genomic architecture on replication dynamics. Conversely, regions of strong concordance are associated with open chromatin and active promoters, where elevated firing rates facilitate timely fork progression and reduce replication stress. In this work, we provide a valuable framework for exploring the structural interplay between replication timing, transcription, and chromatin organisation, offering insights into the mechanisms underlying replication stress and its implications for genome stability and disease.}
 }
 
@@ -66,6 +89,7 @@
   preview={yeast.gif},
   pdf={berners2025regulation.pdf},
   selected={true},
+  selected_order={4},
   abstract={In order to maintain genomic integrity, DNA replication must be highly coordinated. Disruptions in this process can cause replication stress which is aberrant in many pathologies including cancer. Despite this, little is known about the mechanisms governing the temporal regulation of DNA replication initiation, thought to be related to the limited copy number of firing factors. Here, we present a high (1-kilobase) resolution stochastic model of Saccharomyces cerevisiae whole-genome replication in which origins compete to associate with limited firing factors. After developing an algorithm to fit this model to replication timing data, we validated the model by reproducing experimental inter-origin distances, origin efficiencies, and replication fork directionality. This suggests the model accurately simulates the aspects of DNA replication most important for determining its dynamics. We also use the model to predict measures of DNA replication dynamics which are yet to be determined experimentally and investigate the potential impacts of variations in firing factor concentrations on DNA replication.}
 }
 
@@ -84,6 +108,7 @@
   preview={coupling.gif},
   pdf={berkemeier2023coupling.pdf},
   selected={true},
+  selected_order={5},
   abstract={Understanding pattern formation driven by cell-cell interactions has been a significant theme in cellular biology for many years. In particular, due to their implications within many biological contexts, lateral-inhibition mechanisms present in the Notch-Delta signalling pathway led to an extensive discussion between biologists and mathematicians. Deterministic and stochastic models have been developed as a consequence of this discussion, some of which address long-range signalling by considering cell protrusions reaching non-neighbouring cells. The dynamics of such signalling systems reveal intricate properties of the coupling terms involved in these models. In this work, we investigate the advantages and drawbacks of a single-parameter long-range signalling model across diverse scenarios. By employing linear and multi-scale analyses, we discover that pattern selection is not only partially explained but also depends on nonlinear effects that extend beyond the scope of these analytical techniques.}
 }
 
@@ -129,4 +154,5 @@
   pdf={berkemeier2019priori.pdf},
   abstract={We consider parabolic partial differential equations and develop methods that provide a priori estimates for solutions with singular initial data. These estimates are obtained by understanding the time decay of norms of solutions. First, we derive regularity results for the Fokker-Planck equation by estimating the decay of Lebesgue norms. These estimates depend on integral bounds for the advection and diffusion. Then, we apply similar methods to the heat equation. Finally, we conclude by extending our techniques to the porous media equation. The sharpness of our results is confirmed by examining known solutions of these equations. Our main contribution is the use of functional inequalities to establish the decay of norms through nonlinear differential inequalities. These are then combined with ODE methods to deduce estimates for the norms of solutions and their derivatives.},
   selected={true},
+  selected_order={6},
 }

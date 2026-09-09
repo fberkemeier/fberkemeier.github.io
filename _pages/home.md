@@ -12,10 +12,13 @@ profile:
     <p>🏠︎ Cambridge, UK</p>
     <p>✉︎ <a href="mailto:fp409@cam.ac.uk">fp409@cam.ac.uk</a></p>
 
-
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
+
+scholar:
+  sort_by: selected_order
+  order: ascending
 ---
 
 Welcome to my page! I am a Postdoctoral Researcher at the University of Cambridge in the [Boemo Group](https://www.boemogroup.org), where I study DNA replication kinetics, focusing on how origin firing and fork dynamics maintain genome stability in cancer cells.

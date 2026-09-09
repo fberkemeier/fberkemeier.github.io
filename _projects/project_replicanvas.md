@@ -2,7 +2,7 @@
 layout: distillpage
 title: RepliCanvas
 description: A browser studio for drawing and animating DNA replication.
-img: assets/img/blog/replicanvas-modes-demo.gif
+img: assets/img/research_preview/replicanvas_logo.png
 importance: 4
 category: software
 github: https://github.com/fberkemeier/RepliCanvas

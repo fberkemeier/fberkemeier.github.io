@@ -49,3 +49,12 @@
 "nik":
   - firstname: ["Katerina", "K", "K."]
     url: https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Katerina+Nik&btnG=
+
+"merrick":
+  - firstname: ["Catherine J.", "Catherine J", "Catherine", "CJ", "C. J."]
+    url: https://scholar.google.com/citations?user=lMAFGC8AAAAJ
+
+"chapman":
+  - firstname: ["Sarah E.", "Sarah E", "Sarah", "SE", "S. E."]
+    url: https://scholar.google.com/citations?user=i5CmluIAAAAJ
+
